@@ -166,11 +166,7 @@ p {
     transform: scale(1.1);
   }
 }
-/* .heroContent p,
-h1,
-a {
-  margin-left: var(--standard);
-} */
+
 .heroContent p {
   color: var(--white);
   font-weight: 700;
@@ -201,4 +197,85 @@ a {
   height: 100%;
   border-radius: 12px;
 }
+
+/* CSS til bannerforside sektion */
+.bannerForside {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: var(--sand300);
+  padding: 2rem;
+  text-align: center;
+  gap: 2rem;
+}
+.ikonItem img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 0.5rem;
+}
+/* CSS til Produkter på forsiden sektion */
+.produkterForside {
+  margin: var(--standard);
+  padding: var(--standard);
+}
+.produktGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.produktCard {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  position: relative;
+  text-align: center;
+  border-radius: 8px;
+}
+.produktCard img {
+  max-height: 200px;
+  object-fit: contain;
+}
+.wishlist {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.badge {
+  background-color: var(--orange);
+  color: white;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+.vaegt {
+  font-size: 0.9rem;
+  color: #6a6a3d;
+  margin: 0.5rem 0;
+}
+.ikoner img {
+  height: 20px;
+  margin: 0 2px;
+}
+.pris {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 1rem 0 0.5rem;
+}
+.spaceBetweenforside {
+  display: flex;
+  justify-content: space-between;
+  color: #2d2d1f;
+  align-items: baseline;
+}
+.spaceBetweenforside h2 {
+  margin-bottom: 0;
+}
+/* CSS til Torsdagskassen Forside sektion */
+
 /* CSS til forside slut */
