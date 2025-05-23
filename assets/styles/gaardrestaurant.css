@@ -1,0 +1,48 @@
+img{
+    width: 520px;
+    height: 520px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Intro */
+.intro {
+    margin: var(--standard);
+    display: flex;
+    gap: var(--large);
+}
+
+.introTekst h1 {
+    margin-bottom: 32px;
+}
+
+
+/* Event */
+.events h2 {
+    text-align: center;
+}
+
+.eventCards {
+    margin: var(--small);
+}
+
+.eventCard {
+    display: flex;
+}
+
+.eventTekst{
+    width: 265px;
+    height: 440px;
+    background-color: var(--green100);
+    text-align: center;
+}
+
+.eventTekst h3 {
+        margin-top: var(--small);
+}
+
+.eventBillede img{
+    width: 265px;
+    height: 440px;
+    border-radius: 0;
+}
