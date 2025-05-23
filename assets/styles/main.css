@@ -166,6 +166,11 @@ p {
     transform: scale(1.1);
   }
 }
+/* .heroContent p,
+h1,
+a {
+  margin-left: var(--standard);
+} */
 .heroContent p {
   color: var(--white);
   font-weight: 700;
@@ -179,5 +184,21 @@ p {
   background-color: rgba(31, 31, 31, 0.5);
   z-index: -1;
 }
-
+/* Css til om gården sektion */
+.omgaardenForside {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: var(--standard);
+  padding: var(--standard);
+  gap: var(--standard);
+}
+.omgaardenImg {
+  height: 100%;
+}
+.omgaardenImg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
 /* CSS til forside slut */
