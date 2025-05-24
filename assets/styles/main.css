@@ -201,8 +201,8 @@ header{
     gap: 24px;
 }
 span.icon-nav{
-    color: red;
     font-size: 32px;
+    color: var(--green900);
 }
 /*--------------------------*/
 
