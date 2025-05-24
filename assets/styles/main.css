@@ -177,19 +177,21 @@ header{
 .logo img{
     height: 100%;
 }
+
 .global-nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
 }
+
 .global-menu{
     list-style-type: none;
     display: flex;
     gap: 2rem;
 }
 
-.global-menu li a, .products-dropdown-container li a{
+.global-menu li a{
     font-family: "EB Garamond", serif;
     text-decoration: none;
     font-size: 1.125rem;
@@ -211,27 +213,31 @@ header{
     transform-origin: left;
     transition: transform 0.3s ease;
 }
-.global-menu > li:not(.products-dropdown) > a:hover::after,
-.global-menu > li.active > a::after {
+.global-menu > li:not(.products-dropdown li) > a:hover::after,
+.global-menu > li a.active::after{
   transform: scaleX(1);
+}
+
+.products-dropdown{
+    position: relative;
+    padding: 24px 0;
+}
+.products-dropdown-container{
+    display: none;
+    position: absolute;
+    top: 100%;
+    list-style: none;
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 6px;
+    width: 260px;
+    box-shadow: var(--boxShadow);
 }
 .products-dropdown-container li a{
     display: inline-block;
     width: 100%;
     padding: 12px 6px;
 }
-
-.products-dropdown-container{
-    display: none;
-    position: absolute;
-    list-style: none;
-    background-color: var(--white);
-    padding: 16px;
-    border-radius: 6px;
-    width: 260px;
-    box-shadow: var(--boxShadow);
-}
-
 .products-dropdown-container li:not(:last-of-type){
     border-bottom: 1px solid var(--green100);
 }
@@ -241,6 +247,8 @@ header{
 .products-dropdown:hover .products-dropdown-container{
     display: block;
 }
+
+
 .nav-icons{
     display: flex;
     align-items: center;
