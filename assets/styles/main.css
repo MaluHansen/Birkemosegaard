@@ -145,6 +145,41 @@ body{
 header{
     height: 80px;
     background-color: var(--white);
+    padding: 0 2rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo{
+    height: 90%;
+}
+.logo img{
+    height: 100%;
+}
+.global-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.global-menu{
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+}
+.global-menu li a{
+    font-family: "EB Garamond", serif;
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--green900);
+}
+
+.nav-icons{
+    display: flex;
+    align-items: center;
+    gap: 24px;
 }
 /*--------------------------*/
 
