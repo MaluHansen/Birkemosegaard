@@ -135,3 +135,19 @@ p {
     background-color: var(--lightGrey);
     color: var(--grey);
 }
+
+
+
+body{
+    background-color: burlywood;
+}
+/*----------Header----------*/
+header{
+    height: 80px;
+    background-color: var(--white);
+}
+/*--------------------------*/
+
+/*----------Footer----------*/
+/*--------------------------*/
+
