@@ -367,6 +367,9 @@ p {
   padding: var(--standard);
   gap: var(--standard);
 }
+.indhold-wrapper h2 {
+  color: var(--green900);
+}
 
 .billede-container img {
   width: 100%;
@@ -467,5 +470,44 @@ p {
 }
 
 /* CSS til Anmeldelser sektion */
+.facebook-anmeldelser {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.facebook-anmeldelser h2 {
+  color: var(--green900);
+}
+
+.anmeldelser-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.anmeldelse-card {
+  background-color: var(--sand200);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  transition: transform 0.2s ease;
+}
+
+.anmeldelse-card:hover {
+  transform: translateY(-5px);
+}
+
+.anmeldelse-card p {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.anmeldelse-card span {
+  display: block;
+  font-weight: bold;
+  color: var(--green800);
+}
 
 /* CSS til forside slut */
