@@ -356,7 +356,7 @@ p {
 }
 /* CSS til Torsdagskassen Forside sektion */
 .billede-tekst-sektion {
-  background-color: var(--sand300); /* eller din ønskede farve */
+  background-color: var(--sand300);
 }
 
 .indhold-wrapper {
@@ -377,7 +377,7 @@ p {
 .billed-sektion-forside {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
-  grid-template-rows: 200px 200px; /* fast højde i px */
+  grid-template-rows: 200px 200px;
   gap: var(--small);
   margin: var(--standard);
   padding: var(--standard);
@@ -424,8 +424,43 @@ p {
   border: none;
   border-top: 1px solid;
   color: var(--green700);
-  width: 90%; /* fx 50% af forældreelementet */
-  margin: 1rem auto; /* top/bund margin + auto venstre/højre for centreret */
+  width: 90%;
+  margin: 1rem auto;
+}
+
+/* CSS til restuarant sektion på forsiden */
+.restaurant-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 80vh;
+  background-image: url("/assets/img/catering_2.jpg"); /* ← udskift med dit billede */
+  background-size: cover;
+  background-position: center;
+  padding: var(--standard);
+  box-sizing: border-box;
+}
+.text-restaurant-forside {
+  background-color: var(--sand300);
+  padding: var(--standard);
+  margin: var(--standard);
+  max-width: 450px;
+  border-radius: 12px;
+  text-align: center;
+}
+.btn-filled-forside {
+  color: var(--white);
+  background-color: var(--green600);
+  padding: 12px 32px;
+  border-radius: 6px;
+  width: fit-content;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: none;
+  height: 48px;
+  margin-top: 1rem;
+  display: inline-block;
 }
 
 /* CSS til forside slut */
