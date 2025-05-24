@@ -169,9 +169,10 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
+    box-shadow: var(--boxShadow);
 }
 .logo{
-    height: 90%;
+    height: 80%;
 }
 .logo img{
     height: 100%;
@@ -187,21 +188,50 @@ header{
     display: flex;
     gap: 2rem;
 }
-.global-menu li a{
+
+.global-menu li a, .products-dropdown-container li a{
     font-family: "EB Garamond", serif;
     text-decoration: none;
     font-size: 1.125rem;
     font-weight: 500;
     color: var(--green900);
 }
+.global-menu li:hover{
+    border-bottom: 1px solid var(--green600);
+}
+.products-dropdown-container li a{
+    display: inline-block;
+    width: 100%;
+    padding: 12px 6px;
+}
 
+.products-dropdown-container{
+    display: none;
+    position: absolute;
+    list-style: none;
+    background-color: var(--white);
+    padding: 16px;
+    border-radius: 6px;
+    width: 260px;
+    box-shadow: var(--boxShadow);
+}
+
+.products-dropdown-container li:not(:last-of-type){
+    border-bottom: 1px solid var(--green100);
+}
+.products-dropdown-container li:hover{
+    background-color: var(--green100);
+}
+.products-dropdown:hover .products-dropdown-container{
+    display: block;
+}
 .nav-icons{
     display: flex;
     align-items: center;
     gap: 24px;
 }
 span.icon-nav{
-    font-size: 32px;
+    font-size: 28px;
     color: var(--green900);
 }
 /*--------------------------*/
