@@ -217,32 +217,41 @@ p {
   margin: var(--standard);
   padding: var(--standard);
 }
+.produkterForside h3 {
+  font-size: 1.5rem;
+}
 .produktGrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
+  gap: 1rem;
   margin-top: 2rem;
 }
 .produktCard {
   border: 1px solid #ccc;
-  padding: 1rem;
+  padding: 1.2rem;
   position: relative;
-  text-align: center;
   border-radius: 8px;
+  overflow: hidden;
 }
 .produktCard img {
-  max-height: 200px;
-  object-fit: contain;
+  max-height: 240px;
+  max-width: 100%;
 }
 .wishlist {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 0.3rem;
+  right: 0.5rem;
   background: none;
   border: none;
-  font-size: 1.2rem;
+  font-size: 2rem;
   cursor: pointer;
+  color: var(--black);
 }
+.wishlist img {
+  width: 24px;
+  height: 24px;
+}
+
 .badge {
   background-color: var(--orange);
   color: white;
@@ -252,10 +261,11 @@ p {
   position: absolute;
   top: 1rem;
   left: 1rem;
+  z-index: 2;
 }
 .vaegt {
   font-size: 0.9rem;
-  color: #6a6a3d;
+  color: var(--green700);
   margin: 0.5rem 0;
 }
 .ikoner img {
@@ -275,6 +285,55 @@ p {
 }
 .spaceBetweenforside h2 {
   margin-bottom: 0;
+}
+.visAlle {
+  color: var(--grey);
+}
+.btn-filled-forside {
+  color: var(--white);
+  background-color: var(--green600);
+  padding: 12px 32px;
+  border-radius: 6px;
+  width: fit-content;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: none;
+  height: 48px;
+  text-align: center;
+}
+.btn-filled-forside:hover {
+  background-color: var(--green500);
+  transition: 0.3s;
+  box-shadow: var(--boxShadow);
+}
+
+.btn-filled-forside:active {
+  background-color: var(--green700);
+}
+/* .center-btn-forside {
+  text-align: center;
+} */
+.image-wrapper-forside {
+  margin: -1.2rem -1.2rem 1rem -1.2rem; /* trækker billedet ud over paddingen */
+  position: relative;
+  overflow: hidden;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.produkt-billede-forside {
+  width: 100%;
+  height: 230px;
+  object-fit: fill;
+}
+.zoom-billede img {
+  transition: transform 0.4s ease;
+  display: block;
+}
+
+.zoom-billede:hover img {
+  transform: scale(1.05);
 }
 /* CSS til Torsdagskassen Forside sektion */
 
