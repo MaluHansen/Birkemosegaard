@@ -355,5 +355,77 @@ p {
   transform: scale(1.05);
 }
 /* CSS til Torsdagskassen Forside sektion */
+.billede-tekst-sektion {
+  background-color: var(--sand300); /* eller din ønskede farve */
+}
+
+.indhold-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: var(--standard);
+  padding: var(--standard);
+  gap: var(--standard);
+}
+
+.billede-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+/* CSS til billede sketion til gavekort opskrifter osv */
+.billed-sektion-forside {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 200px 200px; /* fast højde i px */
+  gap: var(--small);
+  margin: var(--standard);
+  padding: var(--standard);
+}
+
+.billede {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 12px;
+  text-decoration: none;
+  color: white;
+}
+
+.billede img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+}
+
+.billede.stort {
+  grid-row: span 2;
+}
+
+.gavekort-forside {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.pil-forside {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  z-index: 2;
+}
+.divider {
+  border: none;
+  border-top: 1px solid;
+  color: var(--green700);
+  width: 90%; /* fx 50% af forældreelementet */
+  margin: 1rem auto; /* top/bund margin + auto venstre/højre for centreret */
+}
 
 /* CSS til forside slut */
