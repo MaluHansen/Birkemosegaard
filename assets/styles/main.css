@@ -135,3 +135,111 @@ p {
     background-color: var(--lightGrey);
     color: var(--grey);
 }
+
+
+
+/* Intro */
+.intro {
+    margin: var(--large) var(--standard);
+    display: flex;
+    gap: var(--large);
+}
+
+.introTekst h1 {
+    margin-bottom: 32px;
+}
+
+.introBillede img{
+    width: 520px;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+
+/* Event */
+.events {
+    margin: var(--large) var(--standard);
+}
+
+.events h2 {
+    text-align: center;
+}
+
+.eventCards {
+    margin: var(--small);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.eventCard {
+    display: flex;
+}
+
+.eventTekst{
+    width: 265px;
+    height: 440px;
+    background-color: var(--green100);
+    text-align: center;
+}
+
+.eventTekst h3 {
+        margin-top: var(--small);
+}
+
+.eventBillede img{
+    width: 265px;
+    height: 440px;
+    border-radius: 0;
+}
+
+/* Catering */
+.catering {
+    margin: var(--large) var(--standard);
+    display: flex;
+    gap: var(--large);
+}
+
+.cateringBillede img {
+    height: 620px;
+        border-radius: 12px;
+}
+
+/* Restaurant gavekort */
+.restaurantGavekort {
+    margin: 0, var(--large);
+    gap: var(--large);
+    background-image: url(/assets/img/catering_2.jpg);
+    background-size: cover;
+    width: 100%;
+    align-items: center;
+}
+
+.restaurantGavekortTekst {
+    display: inline-block;
+    padding: var(--standard);
+    margin: var(--large);
+    background-color: var(--sand300);
+    border-radius: 12px;
+    width: 600px;
+}
+
+.restaurantGavekortTekst h2 {
+    display: inline-block;
+    border-bottom: 3px solid var(--green600);
+    padding-bottom: 8px;
+}
+
+/* Hvem er vi sektion */
+.hvemErVi {
+    margin: var(--large) var(--standard);
+    display: flex;
+    gap: var(--large);
+}
+
+.hvemErViBillede img{
+    width: 520px;
+    height: 520px;
+    object-fit: cover;
+    border-radius: 12px;
+}
