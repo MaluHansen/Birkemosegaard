@@ -262,4 +262,8 @@ button.accordion-button:hover {
 button.accordion-button:active {
   transform: scale(0.97);
 }
+.afhentningssteder h2 {
+  text-align: center;
+  color: var(--green800);
+}
 /* CSS til Levering & afhentning side slut */
