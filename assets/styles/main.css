@@ -267,6 +267,9 @@ i.icon-nav{
     color: var(--green800);
     cursor: pointer;
 }
+i.icon-nav:hover{
+    color: var(--green600);
+}
 
 
 
@@ -410,7 +413,7 @@ span.checkbox-icon{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    transition: width 0.2s ease-in;
+    transition: width 0.2s ease-in-out;
 }
 .search-bar:focus-within{
     width: 250px;
@@ -430,6 +433,7 @@ span.checkbox-icon{
 .search-bar:focus-within .search-input{
     opacity: 1;
     cursor: initial;
+    transition: opacity 0.2s ease;
 }
 .search-submit{
     display: flex;
@@ -442,7 +446,7 @@ span.checkbox-icon{
     border-radius: 50%;
     width: 32px;
     aspect-ratio: 1;
-    transition: background-color 0.2s ease-in;
+    transition: background-color 0.2s ease;
 }
 .search-bar:focus-within .search-submit{
     background-color: var(--green600);
