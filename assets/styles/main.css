@@ -185,8 +185,8 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  margin: var(--standard);
-  padding: var(--standard);
+  margin: var(--large);
+
   gap: var(--standard);
 }
 .omgaardenImg {
@@ -214,8 +214,7 @@ p {
 }
 /* CSS til Produkter på forsiden sektion */
 .produkterForside {
-  margin: var(--standard);
-  padding: var(--standard);
+  margin: var(--large);
 }
 .produkterForside h3 {
   font-size: 1.5rem;
@@ -361,9 +360,9 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  margin: var(--standard);
-  padding: var(--standard);
+  margin: var(--large);
   gap: var(--standard);
+  padding: 2.5rem 0 2.5rem 0;
 }
 .indhold-wrapper-forside h2 {
   color: var(--green900);
@@ -383,8 +382,7 @@ p {
   grid-template-columns: 1.5fr 1fr;
   grid-template-rows: 200px 200px;
   gap: var(--small);
-  margin: var(--standard);
-  padding: var(--standard);
+  margin: var(--large);
 }
 
 .billede {
@@ -438,16 +436,15 @@ p {
   align-items: center;
   justify-content: flex-end;
   height: 80vh;
-  background-image: url("/assets/img/catering_2.jpg"); /* ← udskift med dit billede */
+  background-image: url("/assets/img/catering_2.jpg");
   background-size: cover;
   background-position: center;
-  padding: var(--standard);
   box-sizing: border-box;
 }
 .text-restaurant-forside {
   background-color: var(--sand300);
   padding: var(--standard);
-  margin: var(--standard);
+  margin: var(--large);
   max-width: 450px;
   border-radius: 12px;
   text-align: center;
@@ -520,6 +517,7 @@ p {
   :root {
     --standard: 3rem;
     --small: 1rem;
+    --large: 3rem;
   }
   .heroForside {
     height: 60vh;
@@ -544,6 +542,7 @@ p {
   .produktGrid-forside {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .indhold-wrapper-forside {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -565,7 +564,7 @@ p {
   }
   .restaurant-section {
     justify-content: center;
-    padding: var(--small);
+
     height: auto;
     min-height: 30vh;
     text-align: center;
@@ -587,6 +586,9 @@ p {
     justify-content: center;
     text-align: center;
   }
+  .heroForside h1 {
+    font-size: 2rem;
+  }
 
   .heroContent {
     display: flex;
@@ -605,6 +607,7 @@ p {
 
   .omgaardenForside {
     gap: 1rem;
+    margin: var(--small);
   }
 
   .spaceBetweenforside h2 {
@@ -627,6 +630,9 @@ p {
   .produktGrid-forside {
     grid-template-columns: 1fr;
   }
+  .produkterForside {
+    margin: var(--small);
+  }
 
   .produktCard {
     padding: 1rem;
@@ -647,7 +653,6 @@ p {
   }
   .indhold-wrapper-forside {
     margin: var(--small);
-    padding: var(--small);
   }
 
   .indhold-wrapper h2 {
@@ -658,7 +663,6 @@ p {
     grid-template-rows: auto;
     gap: 1rem;
     margin: var(--small);
-    padding: var(--small);
   }
 
   .billede {
@@ -677,6 +681,15 @@ p {
   .gavekort-forside,
   .pil-forside {
     font-size: 1.2rem;
+  }
+  .text-restaurant-forside {
+    margin: var(--small);
+  }
+  .anmeldelser-grid {
+    margin: var(--small);
+  }
+  .facebook-anmeldelser {
+    padding: 0;
   }
 }
 
