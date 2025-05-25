@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="/assets/styles/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="assets/js/password-visibility.js" defer></script>
 </head>
 <body>
     <header>
@@ -50,11 +51,29 @@
 
     <main>
         <div class="login-popup">
-            <p>Log ind</p>
-            <p>Ny kunde? Opret profil her</p>
+            <h4>Log ind</h4>
+            <p>Ny kunde? <a href="#" class="preHeader">Opret profil her</a></p>
             <form class="login-popup-container" action="" id="login-popup-form">
-                <input type="text">
-                <input type="text">
+
+                <input type="text" id="email" placeholder="E-mail" required>
+
+                <div class="password-wrapper">
+                    <input type="password" id="psw" placeholder="Adgangskode" required>
+                    <span class="material-symbols-rounded toggle-password">visibility_off</span>
+                </div>
+               
+                <div class="login-popup-last">
+
+                <label class="checkbox-custom">
+                    <input type="checkbox">
+                    <span class="material-symbols-rounded checkbox-icon"></span>
+                    Husk mig
+                </label>
+
+                <a href="#" class="detaljer">Glemt adgangskode?</a>
+
+                </div>
+                
                 <button class="btn-filled">Log ind</button>
             </form>
         </div>
