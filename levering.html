@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="stylesheet" href="./assets/styles/main.css">
+    <script src="./assets/js/Levering.js" defer></script>
 </head>
 <body>
     <section class="omgaardenForside">
@@ -28,7 +30,6 @@ Birkemosegaard ligger på Sjællands Odde mellem Overby og Havnebyen og dyrker k
   <div class="grid-header">
     <h2>Gratis levering om Torsdagen</h2>
   </div>
-
   <div class="grid-venstre">
     <p>
       Om torsdagen leverer vi varer gratis til vores afhentningssteder i Nykøbing Sjælland, Roskilde, København, Charlottenlund og Lyngby.
@@ -46,7 +47,22 @@ Birkemosegaard ligger på Sjællands Odde mellem Overby og Havnebyen og dyrker k
   </div>
 </section>
 
+ <section class="kort-sektion">
+    <!-- Venstre infoboks -->
+    <div class="info-boks" id="infoBox">
+      <h3>Vælg en lokation på kortet</h3>
+      <p>Info kommer frem her...</p>
+    </div>
 
+    <!-- Midterste kort -->
+    <div class="kort-container" id="kort"></div>
+
+    <!-- Højre liste over byer -->
+    <div class="accordion-container" id="accordionContainer"></div>
+  </section>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <!-- Din egen JS -->
+  <script src="assets/js/Levering.js" defer></script>
 
 </body>
 </html>

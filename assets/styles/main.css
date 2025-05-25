@@ -195,4 +195,71 @@ p {
   margin-bottom: 1.2rem;
   line-height: 1.5;
 }
+
+/* CSS til kort sektion */
+.kort-sektion {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 1rem;
+  background-color: #eae5d3;
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.info-boks {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.4s ease;
+}
+.info-boks h3 {
+  font-size: 1.5rem;
+}
+
+.info-boks.fade {
+  opacity: 0;
+}
+
+.info-boks img {
+  width: 60%;
+}
+
+.kort-container {
+  height: 500px;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.accordion-container {
+  background-color: white;
+  padding: 0;
+  border-radius: 12px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+button.accordion-button {
+  all: unset;
+  cursor: pointer;
+  font-weight: bold;
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border-bottom: 1px solid #3e491e;
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+  box-sizing: border-box;
+}
+
+button.accordion-button:hover {
+  transform: scale(1.05);
+  background-color: #f2f2f2;
+  border-radius: 0;
+}
+
+button.accordion-button:active {
+  transform: scale(0.97);
+}
 /* CSS til Levering & afhentning side slut */
