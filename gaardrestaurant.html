@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gårdrestaurant</title>
     <link rel="stylesheet" href="assets/styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <main>
@@ -23,7 +30,7 @@
             årstiderne.
           </p>
         </div>
-        <div class="introBillede">
+        <div class="introBillede fade-in">
           <img
             src="./assets/img/introbilledeGaardrestaurant.png"
             alt="billede fra restaurant"
@@ -39,6 +46,11 @@
                 Casamadre <br />
                 pop-up
               </h3>
+              <p><i class="fa-solid fa-calendar-days"></i> 29. Maj</p>
+              <p><i class="fa-solid fa-clock"></i> KL. 18.30</p>
+              <p>Italiensk aften med gæstekokke fra Nørrebro</p>
+              <p>450 kr forudbetales ved booking</p>
+              <a class="btn-filled" href="#">Læs mere</a>
             </div>
             <div class="eventBillede">
               <img
@@ -50,21 +62,23 @@
           <div class="eventCard">
             <div class="eventTekst">
               <h3>
-                Casamadre <br />
+                Ranee’s <br />
                 pop-up
               </h3>
+              <p><i class="fa-solid fa-calendar-days"></i> 7. Juni</p>
+              <p><i class="fa-solid fa-clock"></i> KL. 18.30</p>
+              <p>Thailandsk aften i fællesskab med Ranee og sit team</p>
+              <p>450 kr forudbetales ved booking</p>
+              <a class="btn-filled" href="#">Læs mere</a>
             </div>
             <div class="eventBillede">
-              <img
-                src="./assets/img/Riccardo_1_stor.jpeg"
-                alt="billede af riccardo"
-              />
+              <img src="./assets/img/Ranees.jpg" alt="billede af riccardo" />
             </div>
           </div>
         </div>
       </section>
       <section class="catering">
-        <div class="cateringBillede">
+        <div class="cateringBillede fade-in">
           <img src="./assets/img/catering_2.jpg" alt="billede fra restaurant" />
         </div>
         <div class="cateringTekst">
@@ -97,7 +111,7 @@
         </div>
       </section>
       <section class="restaurantGavekort">
-        <div class="restaurantGavekortTekst">
+        <div class="restaurantGavekortTekst fade-in">
           <h2>Køb gavekort til restauranten</h2>
           <p>
             Et gavekort til vores restaurant kan være en fin måde at dele
@@ -130,7 +144,7 @@
           <br />
           <a class="btn-filled" href="#">Læs mere om os</a>
         </div>
-        <div class="hvemErViBillede">
+        <div class="hvemErViBillede fade-in">
           <img
             src="./assets/img/hvemervi.png"
             alt="billede af Birkemosegaard ejere"
@@ -138,5 +152,26 @@
         </div>
       </section>
     </main>
+    <script>
+      // Scrollanimation til eventCards og billeder
+      function handleScrollAnimations() {
+        document.querySelectorAll(".eventCard").forEach((card) => {
+          const rect = card.getBoundingClientRect();
+          if (rect.top < window.innerHeight - 100) {
+            card.style.animationPlayState = "running";
+          }
+        });
+
+        document.querySelectorAll(".fade-in").forEach((el) => {
+          const rect = el.getBoundingClientRect();
+          if (rect.top < window.innerHeight - 100) {
+            el.classList.add("visible");
+          }
+        });
+      }
+
+      window.addEventListener("scroll", handleScrollAnimations);
+      window.addEventListener("load", handleScrollAnimations);
+    </script>
   </body>
 </html>
