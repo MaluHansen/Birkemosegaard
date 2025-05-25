@@ -141,8 +141,7 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  margin: var(--standard);
-  padding: var(--standard);
+  margin: var(--large);
   gap: var(--standard);
 }
 .omgaardenImg {
