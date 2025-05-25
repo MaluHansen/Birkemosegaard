@@ -375,7 +375,7 @@ span.icon-nav{
 span.checkbox-icon{
   font-weight: 200;
   font-size: 20px;
-  fill: 1;
+  font-variation-settings: 'FILL' 1;
 }
 .checkbox-custom input[type="checkbox"]{
     display: none;
