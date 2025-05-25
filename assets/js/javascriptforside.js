@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Skift ikon
       img.src = !isPressed
-        ? "./assets/ikoner/Roodhjerte.png"
-        : "./assets/ikoner/Hvidhjerte.png";
+        ? "./assets/icons/Roodhjerte.png"
+        : "./assets/icons/Hvidhjerte.png";
 
       // ✨ Tilføj animation
       img.classList.remove("animate-pop"); // Reset hvis den allerede er der
