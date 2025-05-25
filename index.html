@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="/assets/styles/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="assets/js/password-visibility.js" defer></script>
+    <script src="assets/js/login-popup.js" defer></script>
+    <script src="assets/js/cart-modal.js" defer></script>
 </head>
 <body>
     <header>
@@ -35,54 +37,62 @@
                 <li><a href="#">Kontakt</a></li>
             </ul>
             <div class="global-menu-icons">
-                <!--<div class="search-bar">
-                 <input type="text" class="search-bar-input" placeholder="søg..." aria-label="search">
-                <button class="search-bar-submit" aria-label="submit search"><span class="material-symbols-rounded icon-submit">search</span></button>
-                </div> -->
                 <i class="material-symbols-rounded icon-nav">search</i>
-                <i class="material-symbols-rounded icon-nav">shopping_cart</i>
-                <div>
-                    <i class="material-symbols-rounded icon-nav">account_circle</i>
+
+                <i class="material-symbols-rounded icon-nav" id="cart-icon">shopping_cart</i>
+                <div class="cart-modal">
+                    <div class="cart-modal-content">
+                        <div class="cart-modal-header">
+                            <p>kurv</p>
+                            <i class="material-symbols-rounded icon-nav" id="cart-modal-close">close</i>
+                        </div>
+                        
+                    </div>
                 </div>
+        
+                <i class="material-symbols-rounded icon-nav" id="profile-icon">account_circle</i>
+                <div class="login-popup">
+                    <h4>Log ind</h4>
+                    <p>Ny kunde? <a href="#" class="preHeader">Opret profil her</a></p>
+                    <form class="login-popup-container" action="" id="login-popup-form">
+        
+                        <div class="form-field">
+                            <input type="text" id="email" placeholder=" " required>
+                            <label for="email">E-mail</label>
+                        </div>
+                        
+                        
+        
+                        <div class="form-field">
+                            <input type="password" id="psw" placeholder=" " required>
+                            <label for="psw">Adgangskode</label>
+                            <span class="material-symbols-rounded toggle-password">visibility_off</span>
+                        </div>
+                    
+                        <div class="login-popup-last">
+        
+                        <label class="checkbox-custom">
+                            <input type="checkbox">
+                            <span class="material-symbols-rounded checkbox-icon"></span>
+                            Husk mig
+                        </label>
+        
+                        <a href="#" class="detaljer">Glemt adgangskode?</a>
+        
+                        </div>
+                        
+                        <button class="btn-filled">Log ind</button>
+                    </form>
+                </div>
+               
+                
                 
             </div>
         </nav>
     </header>
 
     <main>
-        <div class="login-popup">
-            <h4>Log ind</h4>
-            <p>Ny kunde? <a href="#" class="preHeader">Opret profil her</a></p>
-            <form class="login-popup-container" action="" id="login-popup-form">
-
-                <div class="form-field">
-                    <input type="text" id="email" placeholder=" " required>
-                    <label for="email">E-mail</label>
-                </div>
-                
-                
-
-                <div class="form-field">
-                    <input type="password" id="psw" placeholder=" " required>
-                    <label for="psw">Adgangskode</label>
-                    <span class="material-symbols-rounded toggle-password">visibility_off</span>
-                </div>
-               
-                <div class="login-popup-last">
-
-                <label class="checkbox-custom">
-                    <input type="checkbox">
-                    <span class="material-symbols-rounded checkbox-icon"></span>
-                    Husk mig
-                </label>
-
-                <a href="#" class="detaljer">Glemt adgangskode?</a>
-
-                </div>
-                
-                <button class="btn-filled">Log ind</button>
-            </form>
-        </div>
+        
     </main>
 
     <footer>
