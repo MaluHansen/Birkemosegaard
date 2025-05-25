@@ -152,4 +152,47 @@ p {
   height: 100%;
   border-radius: 12px;
 }
+/* CSS til torsdag levering sektion */
+.torsdags-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  background-color: var(--sand300);
+  color: #000;
+  margin: var(--large);
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.grid-header {
+  grid-column: 1 / -1;
+  background-color: var(--sand300);
+  padding: 1.5rem 2rem;
+}
+
+.grid-header h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.grid-venstre {
+  background-color: #fff;
+  padding: 2rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.grid-hoejre {
+  padding: 2rem;
+}
+
+.grid-hoejre ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.grid-hoejre li {
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+}
 /* CSS til Levering & afhentning side slut */
