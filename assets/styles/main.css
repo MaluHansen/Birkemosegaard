@@ -172,14 +172,11 @@ p {
 
 .grid-header h2 {
   margin: 0;
-  font-size: 2rem;
 }
 
 .grid-venstre {
   background-color: #fff;
   padding: 2rem;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
 }
 
 .grid-hoejre {
