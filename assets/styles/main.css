@@ -338,12 +338,6 @@ span.icon-nav{
     gap: 24px;
 }
 
-.login-popup-container input{
-    border: 1px solid var(--lightGrey);
-    border-radius: 6px;
-    padding: 12px 16px;
-    font-size: 1rem;
-}
 .login-popup-container input:focus{
     outline: 1px solid var(--green600);
 }
@@ -382,24 +376,43 @@ span.checkbox-icon{
 }
 
 
-.password-wrapper {
-    position: relative;
-  }
-  
-  .password-wrapper input {
-    width: 100%;
-    padding-right: 32px;
-  }
-  
-  .password-wrapper .toggle-password {
+
+
+.form-field .toggle-password {
     position: absolute;
     right: 12px;
-    top: 50%;
-    transform: translateY(-50%);
+    
+    transform: translateY(65%);
     cursor: pointer;
     font-size: 20px;
     color: var(--lightGrey);
-  }
+}
+
+.form-field{
+    position: relative;
+}
+.form-field input{
+    width: 100%;
+    border: 1px solid var(--lightGrey);
+    border-radius: 6px;
+    padding: 12px 16px;
+    font-size: 1rem;
+}
+.form-field label{
+    position: absolute;
+    background: var(--white);
+    color: var(--grey);
+    padding: 0 4px;
+    top: 12px;
+    left: 12px;
+    transition: all 0.2s ease;
+}
+.form-field input:focus + label,
+.form-field input:not(:placeholder-shown) + label{
+    top: -8px;
+    left: 10px;
+    font-size: 0.75rem;
+}
 
 /*------------*/
 
