@@ -264,6 +264,9 @@ p {
 .afhentning-tekst p {
   color: #2e2e2e;
 }
+.afhentning-tekst h2 {
+  color: var(--green900);
+}
 
 .afhentning-liste h2 {
   color: var(--green900);
@@ -375,6 +378,7 @@ p {
 }
 .spaceBetweenforside h2 {
   margin-bottom: 0;
+  color: var(--green900);
 }
 .visAlle {
   color: var(--grey);
