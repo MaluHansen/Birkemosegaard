@@ -137,7 +137,6 @@ p {
 }
 
 /* OM GÅRDEN */
- /* GÅRDRESTAURANT START */
 
 /* General */
 .fade-in {
@@ -242,6 +241,31 @@ p {
 
 .rundvisningTekst a {
     color: var(--green500);
+}
+
+/* Gårdrestaurant sektion */
+.omGaardrestaurant {
+    margin: 0, var(--large);
+    gap: var(--large);
+    background-image: url(/assets/img/KungOgJesper.png);
+    background-size: cover;
+    width: 100%;
+    align-items: center;
+}
+
+.omGaardrestaurantTekst {
+    display: inline-block;
+    padding: var(--standard);
+    margin: var(--large);
+    background-color: var(--sand300);
+    border-radius: 12px;
+    width: 600px;
+}
+
+.omGaardrestaurantTekst h2 {
+    display: inline-block;
+    border-bottom: 3px solid var(--green600);
+    padding-bottom: 8px;
 }
 
 /* OM GÅRDEN SLUT */
