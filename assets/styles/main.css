@@ -225,6 +225,10 @@ p {
     font-weight: 900;
 }
 
+.vaerdierBoks p {
+    margin: 0;
+}
+
 /* Gårdrestaurant sektion */
 .omGaardrestaurant {
     margin: 0, var(--large);
