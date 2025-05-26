@@ -79,10 +79,15 @@ p {
 }
 
 .preHeader {
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: var(--green700);
+    margin: unset;
 }
 
+.product-h1{
+    font-family: "Lato", sans-serif;
+    color: var(--green900);
+}
 .detaljer {
     font-size: 1rem;
     color: var(--grey);
@@ -136,13 +141,119 @@ p {
     color: var(--grey);
 }
 
+
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
 /*-------Single product------*/
 header{
     height: 80px;
     background-color: blanchedalmond;
 }
 
-
+.breadcrumbs-product{
+    list-style: none;
+    padding: unset;
+    margin: 2rem 4rem;
+}
+.breadcrumbs-product li{
+    display: inline-flex;
+    align-items: center;
+    color: var(--green900);
+}
+.breadcrumbs-product li:last-of-type{
+    font-weight: 600;
+}
+.breadcrumbs-product a{
+    text-decoration: none;
+    color: var(--green900);
+}
+.breadcrumbs-product a:hover{
+    text-decoration: underline;
+    color: var(--green600);
+}
+.product{
+    margin: var(--standard) var(--large);
+}
 .product-container{
-    margin: var(--large);
+    display: flex;
+    gap: var(--standard);
+    margin-bottom: var(--small);
+}
+
+.product-img{
+    width: 50%;
+    max-width: 544px;
+    
+    
+}
+.product-img img{
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center center;
+    border: 1px solid var(--sand300);
+    border-radius: 12px;
+}
+
+.oko-icons{
+    display: flex;
+    height: 1.5rem;
+    gap: 1rem;
+}
+
+.variant-btns{
+    display: flex;
+    gap: 1rem;
+}
+.variant-btns div{
+    background-color: var(--green100);
+    width: 4rem;
+    height: 4rem;
+}
+
+.tabs {
+    display: flex;
+}
+
+.tab-btn {
+    padding: 0.75rem 2.5rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+    margin-bottom: -2px;
+    background: transparent;
+    font-size: 1rem;
+    color: var(--grey);
+    font-weight: bold;
+}
+
+.tab-btn.active-tab {
+    border: 2px solid var(--green600);
+    border-bottom-color: transparent;
+    border-radius: 6px 6px 0px 0px;
+    color: var(--green900);
+    background: var(--white);
+    
+}
+
+.tab-content {
+    display: none;
+    padding: 1rem 2rem;
+}
+
+.tab-content.active-tab {
+    display: block;
+    border-top: 2px solid var(--green600);
+   
+    
+}
+
+.related-products h2{
+    text-align: center;
 }

@@ -5,11 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/assets/styles/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,300,0,0" />
+    <script src="./product-tabs.js" defer></script>
 </head>
 <body>
     <header></header>
     <main>
-        <div class="product-container"></div>
+        <ul class="breadcrumbs-product">
+            <li><a href="#">Produkter</a><span class="material-symbols-rounded">keyboard_arrow_right</span></li>
+            <li><a href="#">Kategori</a><span class="material-symbols-rounded">keyboard_arrow_right</span></li>
+            <li>Produkt navn</li>
+        </ul>
+        <section class="product">
+            <div class="product-container">
+                <div class="product-img">
+                    <img src="./assets/styles/Rugmel_15_kg.jpg" alt="">
+                </div>
+                <div class="product-info">
+                    <p class="preHeader">Brand navn</p>
+                    <h1 class="product-h1">Produkt navn</h1>
+                    <div class="oko-icons">
+                        <img src="./assets/styles/ecology_eu.svg" alt="">
+                        <img src="./assets/styles/ecology_dk.svg" alt="">
+                        <img src="./assets/styles/demeter.svg" alt="">
+                    </div>
+                    <p class="detaljer">800 g</p>
+                    <p>40 kr.</p>
+                    <div class="product-variants">
+                        <p>Variant: <b>800g</b></p>
+                        <div class="variant-btns">
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="quantity-btn">
+
+                    </div>
+                    <button class="btn-filled add-to-cart">Tilføj til kurv</button>
+
+                </div>
+            </div>
+            
+            <div class="product-detail-tabs">
+                <div class="tabs">
+                    <button class="tab-btn active-tab" data-tab="1">Om produktet</button>
+                    <button class="tab-btn" data-tab="2">Næringsindhold</button>
+                    <button class="tab-btn" data-tab="3">Ingredienser</button>
+                </div>
+                    <div class="tab-content active-tab" data-content="1">content 1</div>
+                    <div class="tab-content" data-content="2">content 2</div>
+                    <div class="tab-content" data-content="3">content 3</div>
+                
+            </div>
+            <!-- <hr> -->
+        </section>
+        <section class="related-products">
+            <h2>Vi tror du vil syntes om</h2>
+        </section>
+       
+        
     </main>
     
 </body>
