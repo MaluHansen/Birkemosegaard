@@ -146,7 +146,6 @@ p {
 }
 
 .maaltidskasse-container img {
-  width: 100%;
   border-radius: 12px;
   max-width: 500px;
 }
@@ -154,6 +153,7 @@ p {
 .breadcrumbs {
   font-size: 0.9rem;
   margin-left: var(--standard);
+  margin-top: var(--standard);
 }
 
 .breadcrumbs a {
@@ -199,13 +199,13 @@ p {
   cursor: pointer;
 }
 
-.add-to-cart {
+.add-to-cart-torsdagskasse {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.add-to-cart button {
+.add-to-cart-torsdagskasse button {
   background-color: #839f4c;
   color: white;
   border: none;
@@ -215,7 +215,7 @@ p {
   cursor: pointer;
 }
 
-.add-to-cart .wishlist {
+.add-to-cart-torsdagskasse .wishlist {
   font-size: 1.5rem;
   cursor: pointer;
   border: 1px solid #ccc;
@@ -225,9 +225,14 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: black;
+}
+.add-to-cart-torsdagskasse .wishlist img {
+  width: 26px;
+  height: 26px;
 }
 
-.note {
+.note-torsdagskasse {
   font-size: 0.85rem;
   margin-top: 1rem;
   color: #555;
