@@ -140,7 +140,6 @@ p {
 .maaltidskasse-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-content: center;
   margin-top: 2rem;
   margin-left: var(--large);
   margin-right: var(--large);
