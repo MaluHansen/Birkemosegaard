@@ -492,9 +492,10 @@ footer h4, footer .logo{
     margin-bottom: 2rem;
 }
 .footer-columns-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-block: 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    gap: 2rem;
 }
 .footer-column div:not(.logo){
     display: flex;
