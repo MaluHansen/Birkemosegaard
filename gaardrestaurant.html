@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gårdrestaurant</title>
     <link rel="stylesheet" href="assets/styles/main.css" />
+    <script src="./assets/js/gaardrestaurant.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -152,26 +153,5 @@
         </div>
       </section>
     </main>
-    <script>
-      // Scrollanimation til eventCards og billeder
-      function handleScrollAnimations() {
-        document.querySelectorAll(".eventCard").forEach((card) => {
-          const rect = card.getBoundingClientRect();
-          if (rect.top < window.innerHeight - 100) {
-            card.style.animationPlayState = "running";
-          }
-        });
-
-        document.querySelectorAll(".fade-in").forEach((el) => {
-          const rect = el.getBoundingClientRect();
-          if (rect.top < window.innerHeight - 100) {
-            el.classList.add("visible");
-          }
-        });
-      }
-
-      window.addEventListener("scroll", handleScrollAnimations);
-      window.addEventListener("load", handleScrollAnimations);
-    </script>
   </body>
 </html>
