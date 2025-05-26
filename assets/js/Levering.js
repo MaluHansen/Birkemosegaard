@@ -1,13 +1,16 @@
+// Opretter en ny rød markør-ikon med skygge ved hjælp af Leaflet
 const redIcon = new L.Icon({
+// Angiver URL'en til den røde markør, som skal vises på kortet
   iconUrl:
     "https://cdn.jsdelivr.net/gh/pointhi/leaflet-color-markers@master/img/marker-icon-red.png",
+  // Angiver URL'en til skyggen under markøren (Leaflets standard-skygge)
   shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
   iconSize: [25, 41],
   iconAnchor: [12, 41],
   popupAnchor: [1, -34],
   shadowSize: [41, 41],
 });
-
+// oprette en liste af lokaliteter, som vi bruger til at vise markører på kortet og vise info i infoBox
 const locations = [
   {
     name: "Enghave Kaffe",
@@ -100,18 +103,21 @@ const locations = [
     image: "assets/img/valby_red.png",
   },
 ];
-
+// Opretter et Leaflet-kort og viser det i HTML-elementet med id'et "kort"
 const map = L.map("kort").setView([55.675, 12.565], 12);
+// Tilføjer OpenStreetMap som baggrundskort på Leaflet-kortet
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-  attribution: "&copy; OpenStreetMap",
-}).addTo(map);
+  attribution: "&copy; OpenStreetMap", // Viser kildehenvisning nederst på kortet så i kan se hvor det er fra
+}).addTo(map); // Lægger lagene oven på kortet
 
+// Henter HTML-elementet hvor information om en lokalitet skal vises
 const infoBox = document.getElementById("infoBox");
 const accordionContainer = document.getElementById("accordionContainer");
-
+// Opretter en funktion der opdaterer infoBox med detaljer om en valgt lokalitet
 function updateInfoBox(location) {
   infoBox.classList.add("fade");
   setTimeout(() => {
+// Opdaterer indholdet i infoBox med data fra 'location'-objektet
     infoBox.innerHTML = `
           <img src="${location.image}" alt="${location.name}">
           <h3>${location.name}</h3>
@@ -123,6 +129,7 @@ function updateInfoBox(location) {
           <p><strong>Åbningstid:</strong> ${location.time}</p>
           <p>${location.text}</p>
         `;
+// Fjerner fade-klassen igen, fx for at vise fade-in animation bagefter
     infoBox.classList.remove("fade");
   }, 200);
 }
