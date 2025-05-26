@@ -163,7 +163,7 @@ p {
 
 .introBillede img{
     width: 520px;
-    height: 520px;
+    height: 420px;
     object-fit: cover;
     border-radius: 12px;
 }
@@ -225,29 +225,11 @@ p {
     font-weight: 900;
 }
 
-/* Rundvisnings sektion */
-.rundvisning {
-    margin: var(--large);
-    display: flex;
-    gap: var(--large);
-}
-
-.rundvisningBillede img{
-    width: 520px;
-    height: 520px;
-    object-fit: cover;
-    border-radius: 12px;
-}
-
-.rundvisningTekst a {
-    color: var(--green500);
-}
-
 /* Gårdrestaurant sektion */
 .omGaardrestaurant {
     margin: 0, var(--large);
     gap: var(--large);
-    background-image: url(/assets/img/KungOgJesper.png);
+    background-image: url(/assets/img/catering_2.jpg);
     background-size: cover;
     width: 100%;
     align-items: center;
@@ -266,6 +248,43 @@ p {
     display: inline-block;
     border-bottom: 3px solid var(--green600);
     padding-bottom: 8px;
+}
+
+/* Rundvisnings sektion */
+.rundvisning {
+    margin: var(--large);
+    display: flex;
+    gap: var(--large);
+}
+
+.rundvisningBillede img{
+    width: 520px;
+    height: 520px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.rundvisningTekst a {
+    color: var(--green500);
+}
+
+/* Gårdbutik sektion */
+.omGaardbutik {
+    margin: var(--large);
+    display: flex;
+    gap: var(--large);
+}
+
+.omGaardbutikBillede img{
+    width: 520px;
+    height: 460px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.butikCTA {
+    display: flex;
+    gap: var(--small);
 }
 
 /* OM GÅRDEN SLUT */
