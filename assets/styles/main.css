@@ -135,3 +135,14 @@ p {
     background-color: var(--lightGrey);
     color: var(--grey);
 }
+
+/*-------Single product------*/
+header{
+    height: 80px;
+    background-color: blanchedalmond;
+}
+
+
+.product-container{
+    margin: var(--large);
+}
