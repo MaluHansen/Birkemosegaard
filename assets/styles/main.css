@@ -137,6 +137,61 @@ p {
 }
 
 /* OM GÅRDEN */
- 
+ /* GÅRDRESTAURANT START */
+
+/* General */
+.fade-in {
+  opacity: 0;
+  transform: scale(0.98);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Intro */
+.intro {
+    margin: var(--large);
+    display: flex;
+    gap: var(--large);
+}
+
+.introTekst h1 {
+    margin-bottom: 32px;
+}
+
+.introBillede img{
+    width: 520px;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Om os sektion */
+.omOs {
+    margin: 0, var(--large);
+    gap: var(--large);
+    background-image: url(/assets/img/KungOgJesper.png);
+    background-size: cover;
+    width: 100%;
+    align-items: center;
+}
+
+.omOsTekst {
+    display: inline-block;
+    padding: var(--standard);
+    margin: var(--large);
+    background-color: var(--sand300);
+    border-radius: 12px;
+    width: 600px;
+}
+
+.omOsTekst h2 {
+    display: inline-block;
+    border-bottom: 3px solid var(--green600);
+    padding-bottom: 8px;
+}
 
 /* OM GÅRDEN SLUT */
