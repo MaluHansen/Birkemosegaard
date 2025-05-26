@@ -1,4 +1,4 @@
-  // Scrollanimation til billeder
+  // Scrollanimation
       function handleScrollAnimations() {
         document.querySelectorAll(".fade-in").forEach((el) => {
           const rect = el.getBoundingClientRect();

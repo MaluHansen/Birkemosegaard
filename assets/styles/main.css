@@ -164,13 +164,13 @@ p {
 
 .introBillede img{
     width: 520px;
-    height: 420px;
+    height: 100%;
     object-fit: cover;
     border-radius: 12px;
 }
 
-/* Om os sektion */
-.omOs {
+/* Om gården sektion */
+.omGaarden {
     margin: 0, var(--large);
     gap: var(--large);
     background-image: url(/assets/img/KungOgJesper.png);
@@ -179,7 +179,7 @@ p {
     align-items: center;
 }
 
-.omOsTekst {
+.omGaardenTekst {
     display: inline-block;
     padding: var(--standard);
     margin: var(--large);
@@ -188,10 +188,60 @@ p {
     width: 600px;
 }
 
-.omOsTekst h2 {
+.omGaardenTekst h2 {
     display: inline-block;
     border-bottom: 3px solid var(--green600);
     padding-bottom: 8px;
+}
+
+/* Værdier sektion */
+.vaerdier {
+     margin: var(--large) var(--standard);
+}
+
+.vaerdier h2 {
+    text-align: center;
+}
+
+.vaerdierIndhold {
+    display: flex;
+    gap: var(--standard);
+}
+
+.vaerdierBillede img{
+    width: 520px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.vaerdierBoks {
+    background-color: var(--green100);
+    padding: var(--small);
+    border-radius: 12px;
+    margin-bottom: var(--small);
+}
+
+.vaerdierBoks span {
+    font-weight: 900;
+}
+
+/* Rundvisnings sektion */
+.rundvisning {
+    margin: var(--large);
+    display: flex;
+    gap: var(--large);
+}
+
+.rundvisningBillede img{
+    width: 520px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.rundvisningTekst a {
+    color: var(--green500);
 }
 
 /* OM GÅRDEN SLUT */
