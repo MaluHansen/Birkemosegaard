@@ -516,7 +516,7 @@ p {
 @media (max-width: 1024px) {
   :root {
     --standard: 3rem;
-    --small: 1rem;
+    --small: 2rem;
     --large: 3rem;
   }
   .heroForside {
@@ -541,6 +541,9 @@ p {
   }
   .produktGrid-forside {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .facebook-anmeldelser h2 {
+    margin: var(--small);
   }
 
   .indhold-wrapper-forside {
