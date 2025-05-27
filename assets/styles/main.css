@@ -1,42 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
 
-*{
-    margin: 0;
-    box-sizing: border-box;
-    font-optical-sizing: auto;
-    font-family: "Lato", sans-serif;
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-optical-sizing: auto;
+  font-family: "Lato", sans-serif;
 }
 
 /* Farver */
-:root{
---green100: #F0F4D3; 
---green500: #9AB032;
---green600: #849A28;
---green700: #5C6B20;
---green800: #3e491e;
---green900: #2c3414;
+:root {
+  --green100: #f0f4d3;
+  --green500: #9ab032;
+  --green600: #849a28;
+  --green700: #5c6b20;
+  --green800: #3e491e;
+  --green900: #2c3414;
 
---sand100: #f9f7f3;
---sand200: #f3f1e8;
---sand300: #e1dbc7;
+  --sand100: #f9f7f3;
+  --sand200: #f3f1e8;
+  --sand300: #e1dbc7;
 
---white: #ffffff;
---orange: #ef8000;
---yellow: #fffac2;
---red: #d80100;
---pink: #ffc1c1;
---lightGrey: #bdbdbd;
---grey: #7c7c7c;
+  --white: #ffffff;
+  --orange: #ef8000;
+  --yellow: #fffac2;
+  --red: #d80100;
+  --pink: #ffc1c1;
+  --lightGrey: #bdbdbd;
+  --grey: #7c7c7c;
 
-/* Box-shadow & overlay */
---boxShadow: 0px 0px 20px 0px rgba(0,0,0,0.10);
---overlay: #1f1f1f, 50%;
+  /* Box-shadow & overlay */
+  --boxShadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  --overlay: #1f1f1f, 50%;
 
-/* Spacing */
---small: 2rem;
---standard: 4rem;
---large: 8rem;
+  /* Spacing */
+  --small: 2rem;
+  --standard: 4rem;
+  --large: 8rem;
 }
 
 /* Skriftstørrelser desktop*/
@@ -44,71 +44,71 @@ h1,
 h2,
 h3,
 h4 {
-font-family: "EB Garamond", serif;
-font-weight: 700;
+  font-family: "EB Garamond", serif;
+  font-weight: 700;
 }
 
 .heroH1 {
-    font-size: 4rem;
-    font-weight: bold;
+  font-size: 4rem;
+  font-weight: bold;
 }
 
 h1 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 h2 {
-    font-size: 2.25rem;
-    margin-bottom: 32px;
+  font-size: 2.25rem;
+  margin-bottom: 32px;
 }
 
 h3 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 p {
-    font-size: 1rem;
-    line-height: 1.5;
-    max-width: 75ch;
-    margin-bottom: 16px;
-    color: var(--green900);
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 75ch;
+  margin-bottom: 16px;
+  color: var(--green900);
 }
 
 .smallP {
-    font-size: 0.875rem;
+  font-size: 0.875rem;
 }
 
 .preHeader {
-    font-size: 1rem;
-    color: var(--green700);
+  font-size: 1rem;
+  color: var(--green700);
 }
 
 .detaljer {
-    font-size: 1rem;
-    color: var(--grey);
+  font-size: 1rem;
+  color: var(--grey);
 }
 
 /* Buttons */
 .btn-filled {
-    color: var(--white);
-    background-color: var(--green600);
-    padding: 12px 32px;
-    border-radius: 6px;
-    width: fit-content;
-    text-align: center;
-    cursor: pointer;
-    font-weight: 500;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 48px;
+  color: var(--white);
+  background-color: var(--green600);
+  padding: 12px 32px;
+  border-radius: 6px;
+  width: fit-content;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
 }
 
 .btn-filled:hover {
   background-color: var(--green500);
-    transition: 0.3s;
-    box-shadow: var(--boxShadow);
+  transition: 0.3s;
+  box-shadow: var(--boxShadow);
 }
 
 .btn-filled:active {
@@ -116,22 +116,181 @@ p {
 }
 
 .btn-icon {
-    padding: 12px 24px;
+  padding: 12px 24px;
 }
 
 .btn-img-icon {
-    width: 24px;
-    height: 24px;
-    padding-right: 4px;
+  width: 24px;
+  height: 24px;
+  padding-right: 4px;
 }
 
 .btn-outline {
-    background-color: var(--white);
-    border: 1.5px solid var(--green600);
-    color: var(--green600);
+  background-color: var(--white);
+  border: 1.5px solid var(--green600);
+  color: var(--green600);
 }
 
 .btn-disabled {
-    background-color: var(--lightGrey);
-    color: var(--grey);
+  background-color: var(--lightGrey);
+  color: var(--grey);
 }
+/* CSS til kontakt os siden start */
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 3rem;
+  background-color: #fff;
+  max-width: 1200px;
+  justify-content: center;
+  margin: var(--large);
+}
+
+.contact-form,
+.contact-details {
+  flex: 1 1 300px;
+}
+
+.contact-form h2,
+.contact-details h2 {
+  margin-bottom: 1rem;
+  columns: var(--green900);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  padding: 0.8rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+form button {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #7caf5a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #689f4a;
+}
+
+.contact-details p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.contact-details a {
+  color: #7caf5a;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+.form-group {
+  position: relative;
+  margin-top: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 1.2rem 0.75rem 0.5rem 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  outline: none;
+  line-height: 2.5;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-group label {
+  position: absolute;
+  left: 0.75rem;
+  top: 1rem;
+  background-color: white;
+  padding: 0 0.25rem;
+  color: #9a9a9a;
+  font-size: 1rem;
+  transition: 0.3s ease;
+  pointer-events: none;
+}
+
+/* Når input er i fokus eller har indhold */
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label,
+.form-group textarea:focus + label,
+.form-group textarea:not(:placeholder-shown) + label {
+  top: -1.1rem;
+  left: 0.6rem;
+  font-size: 0.8rem;
+  color: #7caf5a;
+}
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.kontakt-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.ikon-wrapper {
+  background-color: #7caf5a;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.ikon {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
+.kontakt-tekst a {
+  color: #7caf5a;
+  text-decoration: none;
+}
+
+.kontakt-tekst a:hover {
+  text-decoration: underline;
+}
+/* CSS til kontakt os side start */
