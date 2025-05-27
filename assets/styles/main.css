@@ -283,14 +283,23 @@ p {
   display: flex;
   gap: 0.5rem;
   margin-top: var(--small);
+  width: 100%;
+  flex-wrap: nowrap;
+  overflow: hidden;
 }
 
 .input-with-button input {
-  padding: 0.8rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1rem;
+  flex: 1;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.input-with-button button {
+  white-space: nowrap;
+  max-width: 100%;
   height: 48px;
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 @media (min-width: 1920px) {
   html {
@@ -310,4 +319,5 @@ p {
     --standard: 1rem;
   }
 }
+
 /* CSS til kruv siden slut */
