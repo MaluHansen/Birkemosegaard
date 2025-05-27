@@ -135,3 +135,53 @@ p {
     background-color: var(--lightGrey);
     color: var(--grey);
 }
+
+/* Single opskrift side */
+.opskriftTitel {
+    text-align: center;
+    margin-bottom: var(--standard);
+}
+
+.ingredienser {
+    display: flex;
+    margin: var(--standard);
+    gap: var(--standard);
+    justify-content: center;
+}
+
+.ingredienserBillede img {
+    object-fit: cover;
+    height: 800px;
+    width: 600px;
+    border-radius: 12px;
+}
+
+.ingredienser ul li {
+    padding-bottom: 12px;
+}
+
+.ingredienserTekst span {
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.fremgangsmetode {
+    margin: var(--large) var(--large);
+    display: flex;
+    justify-content: center;
+}
+
+.fremgangsmetodeTekst h2 {
+    text-align: center;
+}
+
+.fremgangsmetodeTekst span {
+font-weight: 900;
+font-size: 1.2rem;
+}
+
+.andreOpskrifter h2 {
+    text-align: center;
+}
+
+/* Single opskrift side slut*/
