@@ -1,42 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
 
-*{
-    margin: 0;
-    box-sizing: border-box;
-    font-optical-sizing: auto;
-    font-family: "Lato", sans-serif;
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-optical-sizing: auto;
+  font-family: "Lato", sans-serif;
 }
 
 /* Farver */
-:root{
---green100: #F0F4D3; 
---green500: #9AB032;
---green600: #849A28;
---green700: #5C6B20;
---green800: #3e491e;
---green900: #2c3414;
+:root {
+  --green100: #f0f4d3;
+  --green500: #9ab032;
+  --green600: #849a28;
+  --green700: #5c6b20;
+  --green800: #3e491e;
+  --green900: #2c3414;
 
---sand100: #f9f7f3;
---sand200: #f3f1e8;
---sand300: #e1dbc7;
+  --sand100: #f9f7f3;
+  --sand200: #f3f1e8;
+  --sand300: #e1dbc7;
 
---white: #ffffff;
---orange: #ef8000;
---yellow: #fffac2;
---red: #d80100;
---pink: #ffc1c1;
---lightGrey: #bdbdbd;
---grey: #7c7c7c;
+  --white: #ffffff;
+  --orange: #ef8000;
+  --yellow: #fffac2;
+  --red: #d80100;
+  --pink: #ffc1c1;
+  --lightGrey: #bdbdbd;
+  --grey: #7c7c7c;
 
-/* Box-shadow & overlay */
---boxShadow: 0px 0px 20px 0px rgba(0,0,0,0.10);
---overlay: #1f1f1f, 50%;
+  /* Box-shadow & overlay */
+  --boxShadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  --overlay: #1f1f1f, 50%;
 
-/* Spacing */
---small: 2rem;
---standard: 4rem;
---large: 8rem;
+  /* Spacing */
+  --small: 2rem;
+  --standard: 4rem;
+  --large: 8rem;
 }
 
 /* Skriftstørrelser desktop*/
@@ -44,71 +44,71 @@ h1,
 h2,
 h3,
 h4 {
-font-family: "EB Garamond", serif;
-font-weight: 700;
+  font-family: "EB Garamond", serif;
+  font-weight: 700;
 }
 
 .heroH1 {
-    font-size: 4rem;
-    font-weight: bold;
+  font-size: 4rem;
+  font-weight: bold;
 }
 
 h1 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 h2 {
-    font-size: 2.25rem;
-    margin-bottom: 32px;
+  font-size: 2.25rem;
+  margin-bottom: 32px;
 }
 
 h3 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 p {
-    font-size: 1rem;
-    line-height: 1.5;
-    max-width: 75ch;
-    margin-bottom: 16px;
-    color: var(--green900);
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 75ch;
+  margin-bottom: 16px;
+  color: var(--green900);
 }
 
 .smallP {
-    font-size: 0.875rem;
+  font-size: 0.875rem;
 }
 
 .preHeader {
-    font-size: 1rem;
-    color: var(--green700);
+  font-size: 1rem;
+  color: var(--green700);
 }
 
 .detaljer {
-    font-size: 1rem;
-    color: var(--grey);
+  font-size: 1rem;
+  color: var(--grey);
 }
 
 /* Buttons */
 .btn-filled {
-    color: var(--white);
-    background-color: var(--green600);
-    padding: 12px 32px;
-    border-radius: 6px;
-    width: fit-content;
-    text-align: center;
-    cursor: pointer;
-    font-weight: 500;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 48px;
+  color: var(--white);
+  background-color: var(--green600);
+  padding: 12px 32px;
+  border-radius: 6px;
+  width: fit-content;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
 }
 
 .btn-filled:hover {
   background-color: var(--green500);
-    transition: 0.3s;
-    box-shadow: var(--boxShadow);
+  transition: 0.3s;
+  box-shadow: var(--boxShadow);
 }
 
 .btn-filled:active {
@@ -116,22 +116,198 @@ p {
 }
 
 .btn-icon {
-    padding: 12px 24px;
+  padding: 12px 24px;
 }
 
 .btn-img-icon {
-    width: 24px;
-    height: 24px;
-    padding-right: 4px;
+  width: 24px;
+  height: 24px;
+  padding-right: 4px;
 }
 
 .btn-outline {
-    background-color: var(--white);
-    border: 1.5px solid var(--green600);
-    color: var(--green600);
+  background-color: var(--white);
+  border: 1.5px solid var(--green600);
+  color: var(--green600);
 }
 
 .btn-disabled {
-    background-color: var(--lightGrey);
-    color: var(--grey);
+  background-color: var(--lightGrey);
+  color: var(--grey);
 }
+/* CSS til kruv siden start */
+.progress-breadcrumb {
+  display: flex;
+  gap: 2rem;
+  border-radius: 8px;
+  margin: var(--large) var(--large) var(--large) var(--large);
+  margin-bottom: 2rem;
+}
+
+.progress-breadcrumb .step {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.progress-breadcrumb .label {
+  font-weight: bold;
+  color: #000;
+  background-color: transparent;
+  padding: 0.25rem;
+}
+
+.progress-breadcrumb .bar {
+  width: 100px;
+  height: 10px;
+  background-color: #bbb;
+  border-radius: 10px;
+}
+
+.progress-breadcrumb .bar.active {
+  background-color: var(--green600);
+}
+
+.progress-breadcrumb .label.active {
+  background-color: transparent;
+  color: #000;
+}
+
+.cart-items {
+  width: 60%;
+}
+
+.cart-summary {
+  width: 35%;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-top: none;
+  border-bottom: none;
+  padding: 1rem;
+  margin-top: 0;
+  box-sizing: border-box;
+}
+
+.cart-header,
+.cart-item {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.cart-header {
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.product-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.product-info img {
+  width: 80px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-title {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.product-price,
+.product-subtotal {
+  font-size: 1rem;
+}
+
+.product-qty {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.product-qty button {
+  width: 30px;
+  height: 30px;
+  font-size: 1.2rem;
+  background-color: #eee;
+  border: none;
+  cursor: pointer;
+}
+
+.cart-summary h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.summary-line,
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
+.summary-total {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.checkout-btn {
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 100%;
+  background-color: #888;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+.cart-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 var(--large) var(--large);
+  gap: 2rem;
+}
+.btn-filled-kurv {
+  margin: var(--small) 0 var(--small);
+  margin-top: var(--small);
+}
+.input-with-button {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: var(--small);
+}
+
+.input-with-button input {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  height: 48px;
+}
+@media (min-width: 1920px) {
+  html {
+    margin: 10rem;
+  }
+}
+@media (max-width: 1440px) {
+}
+@media (max-width: 1024px) {
+  :root {
+    --standard: 3rem;
+    --small: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  :root {
+    --standard: 1rem;
+  }
+}
+/* CSS til kruv siden slut */
