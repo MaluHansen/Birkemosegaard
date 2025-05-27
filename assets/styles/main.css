@@ -339,7 +339,7 @@ p {
   }
 
   .progress-breadcrumb .bar {
-    width: 50px;
+    width: 10px;
     height: 8px;
     background-color: #bbb;
     border-radius: 10px;
