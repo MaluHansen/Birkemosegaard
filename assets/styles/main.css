@@ -191,59 +191,25 @@ font-size: 1.2rem;
 .andreOpskrifter h3 {
   font-size: 1.5rem;
 }
-.produktGrid-forside {
+.opskriftGrid-singleOpskrift {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   margin-top: 2rem;
 }
-.produktCard {
+.opskriftCard {
   border: 1px solid #ccc;
   padding: 1.2rem;
   position: relative;
   border-radius: 8px;
   overflow: hidden;
 }
-.produktCard img {
+.opskriftCard img {
   max-height: 240px;
   max-width: 100%;
 }
-.wishlistOpskrift {
-  position: absolute;
-  top: 0.3rem;
-  right: 0.5rem;
-  background: none;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-  color: var(--black);
-}
-.wishlistOpskrift img {
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
-}
-.wishlistOpskrift[aria-pressed="true"] img {
-  filter: hue-rotate(0deg) saturate(1000%) brightness(100%) contrast(100%);
-}
-/* Animation til hjerteikon på produkter */
-@keyframes pop {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.3);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 
-.wishlistOpskrift img.animate-pop {
-  animation: pop 0.3s ease;
-}
-
-.btn-filled-forside {
+.btn-filled-singleOpskrift {
   color: var(--white);
   background-color: var(--green600);
   padding: 12px 32px;
@@ -256,17 +222,17 @@ font-size: 1.2rem;
   height: 48px;
   text-align: center;
 }
-.btn-filled-forside:hover {
+.btn-filled-singleOpskrift:hover {
   background-color: var(--green500);
   transition: 0.3s;
   box-shadow: var(--boxShadow);
 }
 
-.btn-filled-forside:active {
+.btn-filled-singleOpskrift:active {
   background-color: var(--green700);
 }
 
-.image-wrapper-forside {
+.image-wrapper-singleOpskrift {
   margin: -1.2rem -1.2rem 1rem -1.2rem; /* trækker billedet ud over paddingen */
   position: relative;
   overflow: hidden;
@@ -274,7 +240,7 @@ font-size: 1.2rem;
   border-top-right-radius: 8px;
 }
 
-.produkt-billede-forside {
+.opskrift-billede-singleOpskrift {
   width: 100%;
   height: 230px;
   object-fit: fill;
