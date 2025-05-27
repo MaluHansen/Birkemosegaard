@@ -138,23 +138,27 @@ p {
 /* CSS til måltidskasse single start */
 /* CSS til måltidskasse produkt sektion */
 .maaltidskasse-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 2rem;
-  margin-left: var(--large);
-  margin-right: var(--large);
-  margin-bottom: var(--standard);
+  max-width: 1400px;
 }
-
+.maaltidskasse-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 5rem;
+  align-items: start;
+  
+  margin: 0 var(--large) var(--large) var(--large);
+}
 .maaltidskasse-container img {
   max-width: 500px;
+  height: auto;
   border-radius: 12px;
 }
 
 .breadcrumbs {
   font-size: 0.9rem;
-  margin-left: var(--standard);
-  margin-top: var(--standard);
+  margin-bottom: var(--standard);
+  text-align: left;
+  margin-left: var(--large);
 }
 
 .breadcrumbs a {
@@ -180,6 +184,7 @@ p {
 
 .ingredients-list {
   margin-bottom: 1.5rem;
+  
 }
 
 .ingredients-list h3 {
@@ -250,6 +255,7 @@ p {
   color: var(--green700);
   width: 90%;
   margin: 1rem auto;
+   display: block; 
 }
 /* CSS til information sektion torsdags kasse single */
 .afhentning-info {
@@ -426,6 +432,160 @@ p {
 
 .zoom-billede:hover img {
   transform: scale(1.05);
+}
+@media (min-width: 1920px) {
+  html{
+    margin: 10rem;
+  }
+}
+@media (max-width: 1440px) {
+}
+@media (max-width: 1024px) {
+   .maaltidskasse-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .maaltidskasse-grid > div {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .ingredients-list ul {
+    text-align: left;
+    display: inline-block;
+  }
+
+  .add-to-cart-torsdagskasse {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quantity-control {
+    justify-content: center;
+  }
+  .divider{
+    width: 50%;
+  }
+   .afhentning-info {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .afhentning-info > * {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+    .maaltidskasse-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+    justify-items: center;
+  }
+
+  .maaltidskasse-grid > div {
+    max-width: 700px;
+    width: 100%;
+  }
+
+  .add-to-cart-torsdagskasse {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quantity-control {
+    justify-content: center;
+  }
+
+  .ingredients-list ul {
+    text-align: left;
+    display: inline-block;
+  }
+
+  .note-torsdagskasse {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  
+}
+
+@media (max-width: 768px) {
+  :root {
+    --standard: 3rem;
+    --small: 2rem;
+  }
+  
+
+  .maaltidskasse-grid {
+    gap: 2rem;
+  }
+
+  .maaltidskasse-container img {
+    max-width: 100%;
+  }
+
+  .breadcrumbs {
+    margin-left: var(--standard);
+    
+  }
+
+  .product-title,
+  .price,
+  .ingredients-list,
+  .note-torsdagskasse {
+    text-align: center;
+  }
+  .divider{
+    display: none;
+  }
+  .afhentning-info {
+    margin-left: var(--standard);
+    margin-right: var(--standard);
+    margin-top: 2rem;
+  }
+
+  .afhentning-tekst h2,
+  .afhentning-liste h2 {
+    text-align: center;
+  }
+
+  .afhentning-liste ol {
+    padding-left: 1rem;
+  }
+
+  .afhentning-liste li {
+    font-size: 0.95rem;
+  }
+
+  .afhentning-tekst p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  .produktGrid-forside{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 425px) {
+  .produktGrid-forside{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .produkterForside {
+    margin: var(--standard);
+}
+.maaltidskasse-grid {
+  margin: var(--standard);
+}
+.breadcrumbs{
+  margin: var(--standard);
+}
+.spaceBetweenforside h2{
+  font-size: 30px;
+}
+
 }
 
 /* CSS til måltidskasse single slut */
