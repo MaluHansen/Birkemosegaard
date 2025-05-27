@@ -155,6 +155,7 @@ p {
     margin: var(--large);
     display: flex;
     gap: var(--large);
+    justify-content: center;
 }
 
 .introTekst h1 {
@@ -204,6 +205,7 @@ p {
 
 .vaerdierIndhold {
     display: flex;
+        justify-content: center;
     gap: var(--standard);
 }
 
@@ -237,7 +239,6 @@ p {
 
 /* Gårdrestaurant sektion */
 .omGaardrestaurant {
-    margin: 0, var(--large);
     gap: var(--large);
     background-image: url(/assets/img/catering_2.jpg);
     background-size: cover;
@@ -266,6 +267,7 @@ p {
 .rundvisning {
     margin: var(--large);
     display: flex;
+    justify-content: center;
     gap: var(--large);
 }
 
@@ -285,6 +287,7 @@ p {
     margin: var(--large);
     display: flex;
     gap: var(--large);
+    justify-content: center;
 }
 
 .omGaardbutikBillede img{
