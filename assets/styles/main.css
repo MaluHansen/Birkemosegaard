@@ -513,11 +513,18 @@ p {
   height: 24px;
 }
 /* CSS til responsive media qurryes */
+
+@media (min-width: 1920px) {
+  html {
+    margin: 10rem;
+  }
+}
+@media (max-width: 1440px) {
+}
 @media (max-width: 1024px) {
   :root {
     --standard: 3rem;
     --small: 2rem;
-    --large: 3rem;
   }
   .heroForside {
     height: 60vh;
@@ -578,7 +585,7 @@ p {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   :root {
     --standard: 1rem;
   }
