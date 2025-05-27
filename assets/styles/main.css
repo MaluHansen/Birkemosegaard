@@ -229,6 +229,12 @@ p {
     margin: 0;
 }
 
+.vaerdierBoks i{
+    padding-right: 6px;
+    font-size: 32px;
+    color: var(--green500);
+}
+
 /* Gårdrestaurant sektion */
 .omGaardrestaurant {
     margin: 0, var(--large);
