@@ -237,6 +237,8 @@ p {
     background-size: cover;
     width: 100%;
     align-items: center;
+    height: 80vh;
+    display: flex;
 }
 
 .omGaardrestaurantTekst {
