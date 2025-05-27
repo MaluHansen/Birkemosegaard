@@ -575,7 +575,6 @@ p {
 
   .text-restaurant-forside {
     padding: var(--small);
-    max-width: 100%;
   }
 }
 
