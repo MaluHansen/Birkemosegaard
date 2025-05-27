@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produkter</title>
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+    <script src="./assets/js/produkter.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="produkterForside">
+        <aside class="produktFilter">
+          <div class="kategorierFilter">
+            <h3>Kategorier:</h3>
+            <p>Frugt & grønt</p>
+            <p>Kød</p>
+            <p>Fisk & skaldyr</p>
+            <p>Kaffe</p>
+            <p>Mel & korn</p>
+            <p>Grød & gryn</p>
+            <p>Marmelade</p>
+            <p>Saft</p>
+            <p>Syltet</p>
+            <p>Andet godt</p>
+          </div>
+          <div class="egenskaberFilter">
+            <h3>Egenskaber:</h3>
+            <p>Økologisk</p>
+            <p>Laktosefri</p>
+            <p>Lokal produceret</p>
+            <p>Vegansk</p>
+          </div>
+          <div class="price-filter">
+            <h3>Pris:</h3>
+            <div class="price-values">
+              <input type="number" id="min-price" value="30" /> –
+              <input type="number" id="max-price" value="1500" />
+            </div>
+            <div class="range-slider">
+              <input
+                type="range"
+                id="range-min"
+                min="0"
+                max="1500"
+                value="30"
+                step="10"
+              />
+              <input
+                type="range"
+                id="range-max"
+                min="0"
+                max="1500"
+                value="1500"
+                step="10"
+              />
+            </div>
+          </div>
+        </aside>
+        <div class="produktGrid-forside">
+          <div class="produktCard">
+            <div class="image-wrapper-forside">
+              <span class="badge">Nyhed</span>
+              <a href="/#" class="zoom-billede">
+                <img
+                  src="/assets/img/agurk.jpg"
+                  alt="Havremel - glutenfri"
+                  class="produkt-billede-forside"
+                />
+              </a>
+              <button class="wishlist" aria-pressed="false">
+                <img src="./assets/icons/hvidHjerteProdukter.jpg" alt="" />
+              </button>
+            </div>
+            <h3>Havremel - glutenfri</h3>
+            <p class="vaegt">800 g</p>
+            <div class="ikoner">
+              <img src="/assets/img/demeter.png" alt="Demeter" />
+              <img src="/assets/img/organic_eu.png" alt="Økologisk" />
+              <img
+                src="/assets/img/okologi.png"
+                alt="Statskontrolleret økologi"
+              />
+            </div>
+            <p class="pris">52,50 kr.</p>
+            <div class="center-btn-forside">
+              <button class="btn-filled-forside">Tilføj til kurv</button>
+            </div>
+          </div>
+          <div class="produktCard">
+            <div class="image-wrapper-forside">
+              <span class="badge">Nyhed</span>
+              <a href="/#" class="zoom-billede">
+                <img
+                  src="/assets/img/hjertesalat.jpg"
+                  alt="Havremel - glutenfri"
+                  class="produkt-billede-forside"
+                />
+              </a>
+              <button class="wishlist" aria-pressed="false">
+                <img src="./assets/icons/hvidHjerteProdukter.jpg" alt="" />
+              </button>
+            </div>
+            <h3>Havremel - glutenfri</h3>
+            <p class="vaegt">800 g</p>
+            <div class="ikoner">
+              <img src="/assets/img/demeter.png" alt="Demeter" />
+              <img src="/assets/img/organic_eu.png" alt="Økologisk" />
+              <img
+                src="/assets/img/okologi.png"
+                alt="Statskontrolleret økologi"
+              />
+            </div>
+            <p class="pris">52,50 kr.</p>
+            <div class="center-btn-forside">
+              <button class="btn-filled-forside">Tilføj til kurv</button>
+            </div>
+          </div>
+          <div class="produktCard">
+            <div class="image-wrapper-forside">
+              <span class="badge">Nyhed</span>
+              <a href="/#" class="zoom-billede">
+                <img
+                  src="/assets/img/img_3842.jpg"
+                  alt="Havremel - glutenfri"
+                  class="produkt-billede-forside"
+                />
+              </a>
+              <button class="wishlist">
+                <img src="./assets/icons/hvidHjerteProdukter.jpg" alt="" />
+              </button>
+            </div>
+            <h3>Havremel - glutenfri</h3>
+            <p class="vaegt">800 g</p>
+            <div class="ikoner">
+              <img src="/assets/img/demeter.png" alt="Demeter" />
+              <img src="/assets/img/organic_eu.png" alt="Økologisk" />
+              <img
+                src="/assets/img/okologi.png"
+                alt="Statskontrolleret økologi"
+              />
+            </div>
+            <p class="pris">52,50 kr.</p>
+            <div class="center-btn-forside">
+              <button class="btn-filled-forside">Tilføj til kurv</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
