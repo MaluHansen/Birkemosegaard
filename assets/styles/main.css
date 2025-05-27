@@ -316,7 +316,10 @@ button.accordion-button:active {
   padding: 0.5rem 0;
 }
 
-@media (max-width: 1920px) {
+@media (min-width: 1920px) {
+  html{
+    margin: 10rem;
+  }
 }
 @media (max-width: 1440px) {
 }
@@ -337,6 +340,10 @@ button.accordion-button:active {
   .grid-venstre,
   .grid-hoejre {
     background-color: var(--sand300);
+    padding: 1rem 2rem 2rem 2rem;
+  }
+  .grid-venstre p { 
+    color: black;
   }
 
   .grid-header {
