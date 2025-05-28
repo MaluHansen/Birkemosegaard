@@ -155,6 +155,7 @@ p {
   color: #000;
   background-color: transparent;
   padding: 0.25rem;
+  text-decoration: none;
 }
 
 .progress-breadcrumb .bar {
@@ -290,6 +291,12 @@ p {
 .btn-filled-kurv {
   margin: var(--small) 0 var(--small);
   margin-top: var(--small);
+}
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
 }
 .input-with-button {
   display: flex;
@@ -479,4 +486,62 @@ padding-top: 8px;
   background-color: var(--green500);
   box-shadow: var(--boxShadow);
 }
+/* css til tak siden start*/
+.confirmation-wrapper {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.confirmation-details {
+  margin: 2rem 0;
+ 
+}
+
+.confirmation-details ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.confirmation-details li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.grand-total {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--green600);
+}
+.confirmation-wrapper .btn-filled {
+  display: inline-block;
+  margin: 2rem auto 0;
+  text-align: center;
+}
+body.takSiden .progress-breadcrumb {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem auto;
+  
+}
+body.takSiden .order-summary .order-item {
+  justify-content: flex-start;
+}
+
+body.takSiden .order-info {
+  width: auto;
+  flex-direction: column;
+  gap: 0.2rem;
+  align-items: flex-start;
+}
+body.takSiden .order-summary {
+  display: flex;
+  justify-content: center;
+}
+/* css til tak siden slut */
 /* CSS til checkout leverings side slut */

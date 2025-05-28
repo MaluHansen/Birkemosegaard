@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/styles/main.css">
-    <script src="./assets/js/checkout.js"></script>
+    <script src="./assets/js/checkout.js" defer></script>
 </head>
 <body>
     <main>
-        
-    <section class="progress-breadcrumb" data-step="2">
+  <section class="progress-breadcrumb" data-step="2">
   <div class="step">
-    <span class="label active">Kurv</span>
-    <span class="bar active"></span>
+    <span class="label">Kurv</span>
+    <span class="bar"></span>
   </div>
   <div class="step">
     <span class="label">Levering</span>
@@ -28,6 +27,7 @@
     <span class="bar"></span>
   </div>
 </section>
+
 <section class="checkout-wrapper">
   <div class="checkout-left">
     <h2>Leveringsoplysninger</h2>
@@ -71,7 +71,11 @@
       <p>Moms <span>23,60 DKK</span></p>
       <p class="grand-total"><strong> Total</strong><span><strong>141,6 DKK</strong></span></p>
     </div>
-    <a href="./checkout_betaling.html" class="btn-filled">Gå til betaling →</a>
+   <div class="button-row">
+      <a href="./checkout_betaling.html" class="btn-filled">Gå til betaling → </a>
+  <a href="./kurv.html" class="btn-filled secondary">← Tilbage</a>
+  
+</div>
   </div>
 </section>
     </main>
