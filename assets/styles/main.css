@@ -185,7 +185,7 @@ form textarea {
 form button {
   margin-top: 1.5rem;
   padding: 1rem;
-  background-color: #7caf5a;
+  background-color: var(--green600);
   color: white;
   border: none;
   border-radius: 6px;
@@ -193,10 +193,17 @@ form button {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
-form button:hover {
-  background-color: #689f4a;
+.form button:hover {
+  background-color: var(--green500);
+  transition: 0.3s;
+  box-shadow: var(--boxShadow);
 }
+
+.form button:active {
+  background-color: var(--green700);
+}
+
+
 
 .contact-details p {
   margin-bottom: 1.5rem;
@@ -269,7 +276,7 @@ form button:hover {
 }
 
 .ikon-wrapper {
-  background-color: #7caf5a;
+  background-color: var(--green600);
   width: 50px;
   height: 50px;
   border-radius: 10px;
