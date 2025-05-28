@@ -172,6 +172,19 @@ p {
   background-color: transparent;
   color: #000;
 }
+.progress-breadcrumb .step .label,
+.progress-breadcrumb .step .bar {
+  transition: background-color 0.3s ease;
+}
+
+.progress-breadcrumb .step.done .bar {
+  background-color: var(--green600);
+}
+
+.progress-breadcrumb .step.done .label {
+  font-weight: bold;
+}
+
 
 .cart-items {
   width: 60%;
@@ -324,6 +337,7 @@ p {
   .cart-items {
     width: 100%;
   }
+ 
 }
 @media (max-width: 768px) {
   .cart-wrapper {
@@ -348,6 +362,121 @@ p {
   .progress-breadcrumb .step {
     gap: 0.5rem;
   }
+   .checkout-wrapper {
+    flex-direction: column;
+      margin: var(--small) !important;  /* denne skal overskrive */
+      
+  }
+    .checkout-left,
+  .checkout-right {
+    width: 100%;
+    min-width: auto;
+  }
+  
+ 
 }
 
 /* CSS til kruv siden slut */
+
+/* CSS TIL Checkout leverings side start */
+.checkout-wrapper {
+  display: flex;
+  flex-wrap: nowrap; 
+  gap: 4rem;
+  margin: 0 var(--large) var(--large);
+  align-items: flex-start; /* ← Dette sikrer at toppen af begge kolonner flugter */
+}
+
+.checkout-left,
+.checkout-right {
+  flex: 1 1 400px;
+  background: #fff;
+  border-radius: 12px;
+  
+}
+
+.checkout-left form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.checkout-left input,
+.checkout-left textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+.checkout-right h3{
+padding-top: 8px;
+}
+
+.order-summary {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+  margin-top: 3rem
+}
+.order-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.order-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+.order-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.order-info p {
+  margin: 0;
+  font-weight: 500;
+}
+.order-info span {
+  font-weight: bold;
+}
+.grand-total{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.order-summary li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+.summary-totals p {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.3rem 0;
+}
+
+.checkout-button {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: var(--green600);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.checkout-button:hover {
+  background-color: var(--green500);
+  box-shadow: var(--boxShadow);
+}
+/* CSS til checkout leverings side slut */
