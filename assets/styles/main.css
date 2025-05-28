@@ -257,8 +257,8 @@ font-size: 1.2rem;
   }
 }
 
-@media(max-width: 1440px) {
-  /* .ingredienserBillede img {
+@media(max-width: 1439px) {
+  .ingredienserBillede img {
     height: 800px;
     width: 470px;
   }
@@ -284,7 +284,7 @@ font-size: 1.2rem;
 
   .opskriftGrid-singleOpskrift .opskriftCard:nth-child(4) {
     display: none;
-  } */
+  }
 }
 
 @media(max-width: 1024px) {
@@ -325,7 +325,7 @@ font-size: 1.2rem;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .ingredienser {
     margin: var(--small);
   }
