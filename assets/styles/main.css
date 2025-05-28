@@ -168,12 +168,13 @@ p {
 
 .accordion-section {
   max-width: 800px;
-  margin: var(--large);
+  margin: var(--large) auto; /* auto centrerer horisontalt */
   padding: 0 1rem;
+  
 }
 
 .accordion {
-  background-color: #f0f0f0;
+  background-color: var(--sand300);
   margin-bottom: 1rem;
   border-radius: 8px;
   overflow: hidden;
