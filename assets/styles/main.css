@@ -135,3 +135,44 @@ p {
     background-color: var(--lightGrey);
     color: var(--grey);
 }
+/* CSS til 404 error side start */
+ .error-container {
+      max-width: 600px;
+      margin: 6rem auto;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .error-container h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      color: var(--green600);
+    }
+
+    .error-container img {
+      width: 150px;
+      margin-bottom: 1rem;
+      opacity: 0.9;
+    }
+
+    .error-container p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: #444;
+    }
+
+    .btn-filled {
+      background-color: var(--green600);
+      color: white;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-filled:hover {
+      background-color: var(--green500);
+    }
+/* CSS til 404 error side slut */
