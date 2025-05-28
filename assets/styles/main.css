@@ -202,7 +202,7 @@ p {
   text-decoration: underline;
 }
 
-/* MINE OPLYSNINGER */
+/* Mine oplysninger */
 .content {
   background-color: var(--sand200);
   margin: var(--small);
@@ -285,6 +285,74 @@ p {
 
 .redigerKnap {
     border: none;
+}
+
+/* mine favoritter */
+.produktGrid-favoritter {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--small);
+  margin-top: var(--small);
+}
+
+.produktCard-favoritter {
+  border: 1px solid #ccc;
+  padding: 1.2rem;
+  border-radius: 8px;
+  position: relative;
+  background-color: var(--white);
+}
+
+.image-wrapper-favoritter {
+  position: relative;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.produkt-billede-favoritter {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.center-btn-favoritter {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.btn-filled-favoritter {
+  color: var(--white);
+  background-color: var(--green600);
+  padding: 12px 32px;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: none;
+  height: 48px;
+}
+
+.btn-filled-favoritter:hover {
+  background-color: var(--green500);
+  transition: 0.3s;
+  box-shadow: var(--boxShadow);
+}
+
+.wishlist {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.wishlist img {
+  width: 24px;
+  height: 24px;
 }
 
 
