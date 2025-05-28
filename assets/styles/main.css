@@ -141,7 +141,6 @@ p {
 /* Menu */
 .profilIndhold {
   display: flex;
-  margin: 0 var(--large);
   gap: var(--standard);
 }
 
@@ -288,44 +287,73 @@ p {
 }
 
 /* mine favoritter */
-.produktGrid-favoritter {
-  display: grid;
+.produktGrid-container {
+   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--small);
   margin-top: var(--small);
 }
 
 .produktCard-favoritter {
-  background-color: var(--white);
+  position: relative;
   border: 1px solid #ccc;
   padding: 1.2rem;
   border-radius: 8px;
-  position: relative;
+  background-color: var(--white);
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
 }
 
 .image-wrapper-favoritter {
   position: relative;
-  margin-bottom: 1rem;
-  border-radius: 8px;
+  margin: -1.2rem -1.2rem 1rem -1.2rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
   overflow: hidden;
 }
 
 .produkt-billede-favoritter {
   width: 100%;
-  height: 180px; /* justeret højde */
-  object-fit: cover;
-  border-radius: 8px;
+  height: 230px;
+  object-fit: fill;
   display: block;
+}
+
+#mine-favoritter h3 {
+  font-size: 1.25rem;
+}
+
+.vaegt {
+  font-size: 0.85rem;
+  color: var(--green700);
+  margin: 0.25rem 0;
+}
+
+.ikoner {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+.ikoner img {
+  height: 20px;
+  width: auto;
+  object-fit: contain;
+}
+
+.pris {
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 1rem 0 0.5rem;
 }
 
 .center-btn-favoritter {
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: auto;
 }
 
 .btn-filled-favoritter {
@@ -339,6 +367,7 @@ p {
   text-decoration: none;
   height: 48px;
   border: none;
+  font-size: 0.75rem;
 }
 
 .btn-filled-favoritter:hover {
@@ -362,15 +391,8 @@ p {
   height: 24px;
 }
 
-.ikoner {
-  display: flex;
-  gap: 8px;
-  margin-top: 0.5rem;
-}
-
-.ikoner img {
-  height: 24px;
-  width: auto;
+.wishlist.active img {
+  filter: none;
 }
 
 

@@ -21,21 +21,31 @@ document.querySelectorAll('.link').forEach(tab => {
     });
   });
 
-  document.querySelectorAll(".wishlist").forEach((button) => {
-    button.addEventListener("click", () => {
-      const isPressed = button.getAttribute("aria-pressed") === "true";
-      button.setAttribute("aria-pressed", (!isPressed).toString());
+document.querySelectorAll(".wishlist").forEach((button) => {
+  button.addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
 
-      const img = button.querySelector("img");
+    const isActive = button.classList.contains("active");
 
-      // Skift ikon
-      img.src = !isPressed
-        ? "./assets/icons/Roodhjerte.png"
-        : "./assets/icons/Hvidhjerte.png";
+    button.classList.toggle("active");
+    button.setAttribute("aria-pressed", (!isActive).toString());
 
-      // ✨ Tilføj animation
-      img.classList.remove("animate-pop"); // Reset hvis den allerede er der
-      void img.offsetWidth; // Tving browseren til at reflow'e (trick)
-      img.classList.add("animate-pop");
-    });
+    const img = button.querySelector("img");
+
+    img.src = !isActive
+      ? "./assets/icons/Roodhjerte.png"
+      : "./assets/icons/Hvidhjerte.png";
+
+    img.classList.remove("animate-pop");
+    void img.offsetWidth;
+    img.classList.add("animate-pop");
+
+    if (isActive) {
+      const card = button.closest(".produktCard-favoritter");
+      if (card) card.remove();
+    }
   });
+});
+
+
