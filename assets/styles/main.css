@@ -302,4 +302,8 @@ p {
     gap: var(--small);
 }
 
+@media (max-width: 1024px) {
+    
+}
+
 /* OM GÅRDEN SLUT */
