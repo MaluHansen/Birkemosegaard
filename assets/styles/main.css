@@ -365,7 +365,64 @@ p {
 }
 
 @media (max-width: 1024px) {
-  
+  .introGaardrestaurant {
+    flex-direction: column-reverse;
+    gap: var(--small);
+  }
+
+  .introGaardrestaurantBillede img {
+    width: 100%;
+  }
+
+  .eventCards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .eventTekst{
+    width: 265px;
+    height: 540px;
+}
+
+.eventBillede img{
+    width: 265px;
+    height: 540px;
+}
+
+.catering {
+  flex-direction: column;
+  gap: var(--small);
+}
+
+.cateringBillede img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.hvemErVi {
+  flex-direction: column-reverse;
+  gap: var(--small);
+}
+
+.hvemErViBillede img {
+  width: 100%;
+}
+}
+
+@media (max-width: 767px){
+.eventCards {
+  margin: 0;
+}
+   .eventTekst{
+    width: 200px;
+    height: 550px;
+}
+
+.eventBillede img{
+    width: 200px;
+    height: 550px;
+}
 }
 
 /* GÅRDRESTAURANT SLUT */
