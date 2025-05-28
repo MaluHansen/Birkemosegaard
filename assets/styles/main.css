@@ -171,11 +171,10 @@ p {
 
 /* Om gården sektion */
 .omGaarden {
-    margin: 0, var(--large);
     gap: var(--large);
     background-image: url(/assets/img/KungOgJesper.png);
     background-size: cover;
-    width: 100%;
+    width: 100vw;
     align-items: center;
 }
 
@@ -242,7 +241,7 @@ p {
     gap: var(--large);
     background-image: url(/assets/img/catering_2.jpg);
     background-size: cover;
-    width: 100%;
+    width: 100vw;
     align-items: center;
     height: 80vh;
     display: flex;
@@ -302,8 +301,136 @@ p {
     gap: var(--small);
 }
 
+@media (min-width: 1921px) {
+  html {
+    margin: 10rem;
+  }
+}
+
+@media(max-width: 1439px) {
+    .intro {
+        margin-left: var(--small);
+        margin-right: var(--small);
+    }
+
+  .introBillede img {
+    height: 400px;
+    width: 470px;
+  }
+
+  .omGaardenTekst {
+    margin-left: var(--small);
+    margin-right: var(--small);
+  }
+
+.vaerdierBillede img{
+    width: 370px;
+}
+
+.omGaardrestaurant {
+    height: 100%;
+}
+
+.omGaardrestaurantTekst {
+    margin-left: var(--small);
+    margin-right: var(--small);
+  }
+
+.rundvisning {
+    margin-left: var(--small);
+    margin-right: var(--small);
+  }
+
+  .rundvisningBillede img {
+    height: 500px;
+    width: 470px;
+  }
+
+  .omGaardbutik {
+    margin-left: var(--small);
+    margin-right: var(--small);
+  }
+
+  .omGaardbutikBillede img {
+    height: 500px;
+    width: 470px;
+  }
+
+}
+
 @media (max-width: 1024px) {
-    
+    .intro {
+        flex-direction: column;
+        gap: var(--standard);
+        justify-content: center;
+    }
+
+    .introBillede img {
+        justify-content: center;
+        width: 100%;
+        height: 400px;
+        object-position: center top;
+    }
+
+    .vaerdier {
+        margin-bottom: 96px;
+    }
+
+    .vaerdierIndhold {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .vaerdierBillede img {
+        display: none;
+    }
+
+     .rundvisning {
+        flex-direction: column-reverse;
+        gap: var(--standard);
+    }
+
+    .rundvisningBillede img {
+        justify-content: center;
+        width: 100%;
+        height: 400px;
+        object-position: center top;
+    }
+
+     .omGaardbutik {
+        flex-direction: column;
+        gap: var(--standard);
+    }
+
+    .omGaardbutikBillede img {
+        justify-content: center;
+        width: 100%;
+        height: 400px;
+    }
+}
+   
+  @media (max-width: 767px) {
+  .omGaarden {
+    display: flex;
+    justify-content: center;
+    padding: var(--small);
+    flex-direction: column;
+  }
+
+  .omGaardenTekst {
+    margin: 0;
+    width: 100%;
+  }
+
+  .omGaardbutikTekst a {
+    font-size: 12px;
+  }
+
+  .vaerdier {
+    margin-left: var(--small);
+    margin-right: var(--small);
+  }
 }
 
 /* OM GÅRDEN SLUT */
