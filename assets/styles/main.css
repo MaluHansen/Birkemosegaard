@@ -158,4 +158,111 @@ p {
 color: var(--green900);
 }
 
+.b2b-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 70vh;
+  background-image: url("/assets/img/nyhedb2b.jpg");
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  
+}
+.text-restaurant-forside {
+  background-color: var(--sand300);
+  padding: var(--standard);
+  margin: var(--large);
+  max-width: 450px;
+  border-radius: 12px;
+  text-align: center;
+ 
+}
+.btn-filled-forside {
+  color: var(--white);
+  background-color: var(--green600);
+  padding: 12px 32px;
+  border-radius: 6px;
+  width: fit-content;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: none;
+  height: 48px;
+  margin-top: 1rem;
+  display: inline-block;
+}
+.btn-filled-forside:hover {
+  background-color: var(--green500);
+    transition: 0.3s;
+    box-shadow: var(--boxShadow);
+}
+
+.btn-filled-forse:active {
+  background-color: var(--green700);
+}
+
+.nyheds-section {
+  display: flex;
+  align-items: center;
+  height: 70vh;
+  background-image: url("/assets/img/nyhedsbrevbillede.jpg");
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  
+}
+
+@media (min-width: 1920px) {
+  html {
+    margin: 10rem;
+  }
+}
+@media (max-width: 1440px) {
+}
+@media (max-width: 1024px) {
+  :root {
+    --standard: 3rem;
+    --small: 2rem;
+  }
+  .omgaardenForside {
+    grid-template-columns: 1fr;
+  }
+
+  .omgaardenImg {
+    order: -1;
+  }
+  .restaurant-section {
+    justify-content: center;
+
+    height: auto;
+    min-height: 30vh;
+    text-align: center;
+  }
+
+  .text-restaurant-forside {
+    padding: var(--small);
+  }
+
+  } 
+  
+@media (max-width: 768px) {
+  :root {
+    --standard: 1rem;
+  }
+  .text-restaurant-forside {
+    margin: var(--small);
+  }
+  
+  .omgaardenForside {
+    gap: 1rem;
+    margin: var(--small);
+  }
+  .omgaardenImg img {
+    border-radius: 8px;
+  }
+  }
+
+
+
 /* CSS til b2b side slut */
