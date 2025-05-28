@@ -193,7 +193,7 @@ form button {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.form button:hover {
+form button:hover {
   background-color: var(--green500);
   transition: 0.3s;
   box-shadow: var(--boxShadow);
@@ -299,5 +299,12 @@ form button {
 
 .kontakt-tekst a:hover {
   text-decoration: underline;
+}
+@media (min-width: 1921px) {
+  html{
+    margin: 10rem;
+
+  }
+ 
 }
 /* CSS til kontakt os side start */
