@@ -135,3 +135,27 @@ p {
     background-color: var(--lightGrey);
     color: var(--grey);
 }
+/* CSS til b2b side start */
+
+/* Css til om gården sektion */
+.omgaardenForside {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: var(--large);
+
+  gap: var(--standard);
+}
+.omgaardenImg {
+  height: 100%;
+}
+.omgaardenImg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+.omgaardenContent h2{
+color: var(--green900);
+}
+
+/* CSS til b2b side slut */
