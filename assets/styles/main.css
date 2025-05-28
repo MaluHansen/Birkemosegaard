@@ -305,6 +305,17 @@ p {
   html {
     margin: 10rem;
   }
+
+  .omGaarden {
+    width: 100%;
+  }
+
+  .omGaardrestaurant {
+    height: 100%;
+        width: 100%;
+
+}
+
 }
 
 @media(max-width: 1439px) {
