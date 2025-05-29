@@ -176,27 +176,5 @@ p {
       background-color: var(--green500);
     }
 
-  #toTopBtn {
-  position: fixed;
-  bottom: 40px;
-  right: 40px;
-  z-index: 100;
-  background-color: var(--grey); 
-  border: none;
-  outline: none;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  font-size: 24px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-#toTopBtn:hover {
-  background-color: var(--green600);
-}
-#toTopBtn i {
-  color: var(--green900); /* eller en anden farve */
-}
 
 /* CSS til 404 error side slut */
