@@ -141,7 +141,7 @@ p {
 /* Menu */
 .profilIndhold {
   display: flex;
-  gap: var(--standard);
+  justify-content: center;
 }
 
 .menu {
@@ -208,6 +208,7 @@ p {
   padding: var(--standard);
   border-radius: 8px;
   box-shadow: var(--boxShadow);
+  min-width: 800px;
 }
 
 .user-info-form {
@@ -282,33 +283,31 @@ p {
   text-decoration: underline;
 }
 
-.redigerKnap {
-    border: none;
-}
-
-/* mine favoritter */
+/* Mine favoritter sektion */
 .produktGrid-container {
-   display: grid;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--small);
+  gap: 1.5rem;
   margin-top: var(--small);
 }
 
 .produktCard-favoritter {
   position: relative;
   border: 1px solid #ccc;
-  padding: 1.2rem;
+  padding: 1rem;
   border-radius: 8px;
   background-color: var(--white);
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-size: 0.95rem;
+  max-width: 100%;
 }
 
 .image-wrapper-favoritter {
   position: relative;
-  margin: -1.2rem -1.2rem 1rem -1.2rem;
+  margin: -1rem -1rem 0.75rem -1rem;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   overflow: hidden;
@@ -316,38 +315,39 @@ p {
 
 .produkt-billede-favoritter {
   width: 100%;
-  height: 230px;
-  object-fit: fill;
+  height: 160px;
+  object-fit: cover;
   display: block;
 }
 
 #mine-favoritter h3 {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
 }
 
 .vaegt {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: var(--green700);
-  margin: 0.25rem 0;
+  margin: 0.2rem 0;
 }
 
 .ikoner {
   display: flex;
-  gap: 0.4rem;
+  gap: 0.3rem;
   align-items: center;
-  margin: 0.5rem 0;
+  margin: 0.4rem 0;
 }
 
 .ikoner img {
-  height: 20px;
+  height: 18px;
   width: auto;
   object-fit: contain;
 }
 
 .pris {
   font-weight: bold;
-  font-size: 1rem;
-  margin: 1rem 0 0.5rem;
+  font-size: 0.95rem;
+  margin: 0.75rem 0 0.4rem;
 }
 
 .center-btn-favoritter {
@@ -359,13 +359,13 @@ p {
 .btn-filled-favoritter {
   color: var(--white);
   background-color: var(--green600);
-  padding: 12px 32px;
+  padding: 10px 24px;
   border-radius: 6px;
   text-align: center;
   cursor: pointer;
   font-weight: 500;
   text-decoration: none;
-  height: 48px;
+  height: 40px;
   border: none;
   font-size: 0.75rem;
 }
@@ -395,8 +395,8 @@ p {
   filter: none;
 }
 
-/* ORDRESEKTION */
 
+/* ORDRESEKTION */
 #ordrer {
   padding: var(--standard);
   background-color: var(--sand200);
@@ -429,6 +429,7 @@ p {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 2rem;
+  background-color: var(--white);
 }
 
 .orders-table thead {
@@ -438,14 +439,10 @@ p {
 
 .orders-table th {
   padding: 1rem 1.5rem;
-  font-size: 1.1rem;
 }
 
 .orders-table td {
   padding: 1.5rem;
-  background-color: var(--white);
-  vertical-align: middle;
-  font-size: 1rem;
 }
 
 .order-info {
@@ -480,15 +477,13 @@ p {
 }
 
 .order-link {
+  margin-top: 6px;
   color: var(--grey);
-  font-size: 0.95rem;
-  text-align: right;
   text-decoration: underline;
 }
 
  
 /* INDSTILLINGER sektion */
-
 #indstillinger {
   background-color: var(--sand200);
   padding: var(--standard);
@@ -496,7 +491,7 @@ p {
 }
 
 #indstillinger h2 {
-  margin-bottom: var(--standard);
+  margin-bottom: var(--small);
 }
 
 .settings-section {
@@ -545,6 +540,49 @@ p {
 
 .btn-delete:hover {
   background-color: #b80000;
+}
+
+/* MEDIA */
+@media (min-width: 1921px) {
+  html {
+    margin: 10rem;
+  }
+}
+
+@media (max-width: 1439px) {
+  .content {
+    min-width: 500px;
+  }
+
+   .produktGrid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .profilIndhold {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+.content {
+  margin: 0;
+  border-radius: none;
+}
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .orders-table thead th:nth-child(2),
+  .orders-table thead th:nth-child(4),
+  .orders-table thead th:nth-child(5),
+  .orders-table td:nth-child(2),
+  .orders-table td:nth-child(4),
+  .orders-table td:nth-child(5) {
+    display: none;
+  }
 }
 
 /* PROFIL SIDE SLUT */

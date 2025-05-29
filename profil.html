@@ -26,9 +26,6 @@
             <li class="link" data-tab="ordrer">
               <i class="fa-regular fa-clipboard"></i> Ordrer
             </li>
-            <li class="link" data-tab="gavekort">
-              <i class="fa-solid fa-gift"></i> Gavekort
-            </li>
             <li class="link" data-tab="indstillinger">
               <i class="fa-solid fa-gear"></i> Indstillinger
             </li>
@@ -61,7 +58,7 @@
               <input type="checkbox" id="primary" checked />
               <label for="primary">Dette er min primære adresse</label>
             </div>
-            <button class="btn-filled redigerKnap">Rediger</button>
+            <button class="btn-filled">Rediger</button>
             <button class="btn-outline">
               <i class="fa-solid fa-plus"></i>Tilføj adresse
             </button>
@@ -255,7 +252,6 @@
                 <th></th>
               </tr>
             </thead>
-
             <tr>
               <td class="order-info">
                 <img
@@ -266,18 +262,14 @@
                 <div class="order-text">
                   <div class="order-id">#12345678</div>
                   <div class="order-products">4 produkter</div>
+                  <div class="order-link">Se detaljer &gt;</div>
                 </div>
               </td>
               <td>12-12-24</td>
               <td>40,00 kr.</td>
               <td class="order-status">leveret</td>
-              <td class="order-link">Se detaljer &gt;</td>
             </tr>
           </table>
-        </div>
-
-        <div class="content" id="gavekort" hidden>
-          <h2>Gavekort</h2>
         </div>
 
         <div class="content" id="indstillinger" hidden>
@@ -293,6 +285,7 @@
               value="********************"
               readonly
             />
+            <br />
             <button class="btn-filled btn-icon">
               <i class="fa-solid fa-pen"></i>
               Ændre adgangskode
