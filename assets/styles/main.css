@@ -257,3 +257,146 @@ header{
 .related-products h2{
     text-align: center;
 }
+
+@media (min-width: 1921px) {
+    html{
+        margin: 10rem;
+    }
+}
+
+@media (max-width: 1920px) {
+}
+@media (max-width: 1440px) {
+     .product {
+    margin: var(--standard) 5vw;
+  }
+
+  .tab-btn {
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+  }
+
+  .product-img {
+    max-width: 500px;
+  }
+}
+@media (max-width: 1024px) {
+     .product-container {
+    width: 100%;
+    align-items: center;
+    grid-template-columns: 1fr;
+  }
+
+  .product-img {
+   
+    max-width: 100%;
+  }
+
+  .variant-btns {
+    margin-bottom: 15px;
+  }
+
+  .tabs {
+    width: 100%;
+    text-align: center;
+  }
+
+  .tab-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .breadcrumbs-product {
+    margin: 2rem;
+    font-size: 0.95rem;
+  }
+
+}
+@media (max-width: 768px) {
+      .product-container {
+   width: 100%;
+    align-items: center;
+      
+    
+  }
+     header {
+    height: 60px;
+  }
+
+  .product {
+    margin: var(--small);
+  }
+ 
+
+  .breadcrumbs-product {
+    margin: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .tab-content {
+    padding: 1rem;
+  }
+
+  .variant-btns div {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .oko-icons {
+    gap: 0.5rem;
+  }
+  @media (max-width: 425px) {
+  header {
+    height: 60px;
+    padding: 0 1rem;
+  }
+
+  .product {
+    margin: var(--small);
+  }
+
+  .product-container {
+    gap: var(--small);
+     flex-direction: column;
+  }
+
+  .product-img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .variant-btns {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    
+  }
+
+  .variant-btns div {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+
+
+  .tab-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+  }
+
+  .tab-content {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .breadcrumbs-product {
+    margin: 1rem;
+    font-size: 0.85rem;
+    flex-direction: column;
+  }
+
+  .related-products h2 {
+    font-size: 1.25rem;
+  }
+}
+
+    
+}
