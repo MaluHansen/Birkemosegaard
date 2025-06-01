@@ -512,6 +512,32 @@ p {
   width: 24px;
   height: 24px;
 }
+#toTopBtn:hover {
+  background-color: var(--green600);
+}
+#toTopBtn i {
+  color: var(--green900);
+}
+  #toTopBtn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 100;
+  background-color: var(--grey); 
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-items: center; 
+  justify-content: center;
+  display: none;
+}
+#toTopBtn.visible {
+  display: flex;
+}
 /* CSS til responsive media qurryes */
 
 @media (min-width: 1920px) {
