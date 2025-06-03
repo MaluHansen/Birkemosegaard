@@ -1,6 +1,8 @@
+// Kilde: https://leafletjs.com/ //
+
 // Opretter en ny rød markør-ikon med skygge ved hjælp af Leaflet
 const redIcon = new L.Icon({
-// Angiver URL'en til den røde markør, som skal vises på kortet
+  // Angiver URL'en til den røde markør, som skal vises på kortet
   iconUrl:
     "https://cdn.jsdelivr.net/gh/pointhi/leaflet-color-markers@master/img/marker-icon-red.png",
   // Angiver URL'en til skyggen under markøren (Leaflets standard-skygge)
@@ -103,6 +105,7 @@ const locations = [
     image: "assets/img/valby_red.png",
   },
 ];
+
 // Opretter et Leaflet-kort og viser det i HTML-elementet med id'et "kort"
 const map = L.map("kort").setView([55.675, 12.565], 12);
 // Tilføjer OpenStreetMap som baggrundskort på Leaflet-kortet
@@ -117,7 +120,7 @@ const accordionContainer = document.getElementById("accordionContainer");
 function updateInfoBox(location) {
   infoBox.classList.add("fade");
   setTimeout(() => {
-// Opdaterer indholdet i infoBox med data fra 'location'-objektet
+    // Opdaterer indholdet i infoBox med data fra 'location'-objektet
     infoBox.innerHTML = `
           <img src="${location.image}" alt="${location.name}">
           <h3>${location.name}</h3>
@@ -129,22 +132,25 @@ function updateInfoBox(location) {
           <p><strong>Åbningstid:</strong> ${location.time}</p>
           <p>${location.text}</p>
         `;
-// Fjerner fade-klassen igen, fx for at vise fade-in animation bagefter
+    // Fjerner fade-klassen igen, fx for at vise fade-in animation bagefter
     infoBox.classList.remove("fade");
   }, 200);
 }
-
+// Gennemgår hver lokalitet (loc) i arrayet 'locations' med en indexværdi
 locations.forEach((loc, index) => {
+  // Opretter en Leaflet-marker med lokationens koordinater og bruger et rødt ikon
   const marker = L.marker(loc.coords, { icon: redIcon }).addTo(map);
+  // Tilføjer en klik-event til markøren, så informationsboksen opdateres med data fra den valgte lokation
   marker.on("click", () => updateInfoBox(loc));
-
+  // Opretter en knap til accordion-visning af lokationen
   const button = document.createElement("button");
   button.className = "accordion-button";
   button.textContent = loc.name;
+  // Når knappen klikkes, opdateres informationsboksen med den aktuelle lokation
   button.addEventListener("click", () => updateInfoBox(loc));
-
+  // Tilføjer knappen til HTML-elementet 'accordionContainer'
   accordionContainer.appendChild(button);
-
+  // Simulerer klik på den første knap for at vise den første lokation automatisk
   if (index === 0) {
     setTimeout(() => button.click(), 0);
   }
