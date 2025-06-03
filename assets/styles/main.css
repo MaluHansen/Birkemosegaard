@@ -317,7 +317,7 @@ button.accordion-button:active {
 }
 
 @media (min-width: 1920px) {
-  html{
+  html {
     margin: 10rem;
   }
 }
@@ -342,7 +342,7 @@ button.accordion-button:active {
     background-color: var(--sand300);
     padding: 1rem 2rem 2rem 2rem;
   }
-  .grid-venstre p { 
+  .grid-venstre p {
     color: black;
   }
 

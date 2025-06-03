@@ -107,7 +107,7 @@ const locations = [
 ];
 
 // Opretter et Leaflet-kort og viser det i HTML-elementet med id'et "kort"
-const map = L.map("kort").setView([55.675, 12.565], 12);
+const map = L.map("kort").setView([55.675, 12.565], 12); // her sætter vi et startview på hvor på kortet der skal vises
 // Tilføjer OpenStreetMap som baggrundskort på Leaflet-kortet
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution: "&copy; OpenStreetMap", // Viser kildehenvisning nederst på kortet så i kan se hvor det er fra
