@@ -247,6 +247,7 @@ header{
     border-radius: 6px;
     width: 260px;
     box-shadow: var(--boxShadow);
+    z-index: 1;
 }
 .products-dropdown-container li a{
     display: inline-block;
@@ -584,10 +585,15 @@ footer h4, footer .logo{
 }
 .footer-columns-container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 2rem;
     gap: 2rem;
 }
+.footer-column {
+  width: calc(33.333% - 1.5rem);
+}
+
 .footer-column div:not(.logo){
     display: flex;
     margin-bottom: 1rem;
@@ -632,6 +638,32 @@ footer hr{
 .payment-icons{
     justify-self: end;
     height: 2rem;
+    width: fit-content;
+}
+
+
+@media (max-width: 1439px) {
+  .footer-column {
+    width: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer-columns-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .footer-column {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+    .footer-bottom {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 
