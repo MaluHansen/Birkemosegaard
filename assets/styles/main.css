@@ -462,6 +462,13 @@ span.checkbox-icon{
     color: var(--white);
 }
 
+span.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: var(--green800);
+  cursor: pointer;
+}
+
 /*--------------------------------*/
 
 @media (max-width: 1370px) {
@@ -501,6 +508,51 @@ span.checkbox-icon{
 .search-input{
     width: 6rem;
 }
+}
+
+@media (max-width: 1024px) {
+    span.menu-toggle {
+    display: block;
+    margin-left: 24px;
+  }
+
+  .global-menu {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: var(--white);
+    width: 60%;
+    flex-direction: column;
+    box-shadow: var(--boxShadow);
+    gap: 10px;
+  }
+
+  .global-menu.active {
+    display: flex;
+  }
+
+  .global-menu {
+    padding: 25px;
+  }
+
+  .global-menu li {
+    padding: 10px;
+  }
+
+  .global-menu-icons {
+    display: flex;
+  }
+
+  .global-nav {
+    justify-content: right;
+  }
+}
+
+@media (max-width: 767px) {
+    .global-menu {
+        width: 100%;
+    }
 }
 
 
