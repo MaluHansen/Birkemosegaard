@@ -218,8 +218,6 @@ color: var(--green900);
     margin: 10rem;
   }
 }
-@media (max-width: 1440px) {
-}
 @media (max-width: 1024px) {
   :root {
     --standard: 3rem;
