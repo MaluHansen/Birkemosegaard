@@ -331,7 +331,7 @@ p {
 }
 
 .image-wrapper-forside {
-  margin: -1.2rem -1.2rem 1rem -1.2rem; /* trækker billedet ud over paddingen */
+  margin: -1.2rem -1.2rem 1rem -1.2rem;
   position: relative;
   overflow: hidden;
   border-top-left-radius: 8px;
@@ -505,7 +505,7 @@ p {
   color: var(--green800);
 }
 .facebook-logo {
-  color: #1877f2; /* Facebook blå */
+  color: #1877f2;
   margin-bottom: 0.5rem;
 }
 .facebook-logo svg {
@@ -545,8 +545,7 @@ p {
     margin: 10rem;
   }
 }
-@media (max-width: 1440px) {
-}
+
 @media (max-width: 1024px) {
   :root {
     --standard: 3rem;
